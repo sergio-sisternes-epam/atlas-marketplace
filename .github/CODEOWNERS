@@ -1,0 +1,3 @@
+# Pin and pack artefacts require human ownership (pair with branch protection).
+/apm.yml @sergio-sisternes-epam
+/.claude-plugin/ @sergio-sisternes-epam
