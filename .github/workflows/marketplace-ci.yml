@@ -1,0 +1,75 @@
+# Reference adapter for apm-marketplace (non-normative relative to apm ci-cd-canonical).
+# Stages: Validate → Build (pack + drift). Publish = human merge to protected main.
+name: marketplace-ci
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches-ignore: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate-and-pack:
+    name: validate-and-pack
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install apm CLI
+        run: |
+          python -m pip install --upgrade pip
+          # Pin for reproducibility; bump deliberately
+          pip install "apm-cli==0.28.0"
+
+      - name: Validate registry layout
+        run: |
+          set -euo pipefail
+          test -f apm.yml
+          # Registry-only: no Grok skill tree at repo root
+          if [ -f SKILL.md ]; then
+            echo "Refuse: SKILL.md at marketplace root (registry must not vendor skill source)"
+            exit 1
+          fi
+          if [ -d .apm/skills ]; then
+            echo "Refuse: .apm/skills present (not a registry layout)"
+            exit 1
+          fi
+          python - <<'PY'
+          from pathlib import Path
+          try:
+              import yaml
+          except ImportError:
+              import subprocess, sys
+              subprocess.check_call([sys.executable, "-m", "pip", "install", "pyyaml"])
+              import yaml
+          data = yaml.safe_load(Path("apm.yml").read_text())
+          assert data.get("name"), "apm.yml missing name"
+          m = data.get("marketplace") or {}
+          pkgs = m.get("packages") or []
+          assert pkgs, "marketplace.packages must be non-empty"
+          for p in pkgs:
+              assert p.get("name"), p
+              assert p.get("source"), p
+              assert p.get("ref") or p.get("version"), f"{p.get('name')}: need ref or version"
+          print(f"ok: {len(pkgs)} package(s)")
+          PY
+
+      - name: Pack marketplace
+        run: apm pack
+
+      - name: Fail on pack drift
+        run: |
+          set -euo pipefail
+          if ! git diff --exit-code -- .claude-plugin/marketplace.json; then
+            echo "::error::marketplace.json out of date. Run 'apm pack' and commit the result."
+            exit 1
+          fi
