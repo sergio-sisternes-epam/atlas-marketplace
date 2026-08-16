@@ -1,0 +1,17 @@
+name: apm-marketplace
+version: 0.1.0
+description: Private APM marketplace for Grok-native skills (registry only)
+author: sergio-sisternes-epam
+license: MIT
+
+marketplace:
+  owner:
+    name: sergio-sisternes-epam
+    url: https://github.com/sergio-sisternes-epam
+  outputs:
+    - claude
+  packages:
+    - name: okf
+      description: Open Knowledge Format — pure format standard and validator (Grok-native skill)
+      source: sergio-sisternes-epam/okf
+      ref: d734f78c384e767e52ab81bf4c02ca5940d56363
