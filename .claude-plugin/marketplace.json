@@ -1,0 +1,20 @@
+{
+  "name": "apm-marketplace",
+  "owner": {
+    "name": "sergio-sisternes-epam",
+    "url": "https://github.com/sergio-sisternes-epam"
+  },
+  "plugins": [
+    {
+      "name": "okf",
+      "description": "Open Knowledge Format — pure format standard and validator (Grok-native skill)",
+      "source": {
+        "source": "github",
+        "repo": "sergio-sisternes-epam/okf",
+        "ref": "d734f78c384e767e52ab81bf4c02ca5940d56363",
+        "sha": "d734f78c384e767e52ab81bf4c02ca5940d56363",
+        "tag_pattern": "v{version}"
+      }
+    }
+  ]
+}
