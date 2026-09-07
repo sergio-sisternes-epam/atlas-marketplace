@@ -25,14 +25,14 @@ each external package:
 - `atlas` → `sergio-sisternes-epam/atlas` @ `2b6659e5440886c7abbd9ad10686fa3a0100813b` (v0.9.0)
 - `discuss` → `sergio-sisternes-epam/discuss` @ `d77c9f9c4c952d327811bfec9cfa764a6c56d1d6` (v0.3.8)
 - `think` → `sergio-sisternes-epam/think` @ `874613a67018c74ee95f857416fb315d2f80b92b` (v0.1.0)
-- `atlas-cartograph` → `sergio-sisternes-epam/atlas-cartograph` @ `2372272dc5c282f1b1a472483a412ef394971764` (v0.1.0)
+- `atlas-cartograph` → `sergio-sisternes-epam/atlas-cartograph` @ `3f9fe350cb745b2b122a5d1d667f98ac5783f1b8` (v0.1.1)
 - `autogenesis` → `sergio-sisternes-epam/autogenesis` @ `990d4f1a3e761bafb0385c91a0afbde38b3bd9ea` (v0.4.1)
 
 Never modify those upstream repositories from this marketplace.
 
 ## Catalog change procedure
 
-1. Change only `marketplace.packages[]` in `apm.yml` (name, source, immutable `ref`, description).
+1. Change only `marketplace.packages[]` in `apm.yml` (name, source, version, immutable `ref`, description). Keep `version` aligned with the package manifest at the pinned release commit.
 2. Run `apm pack` with apm-cli 0.30.0 (same pin as CI). `apm marketplace check` is optional: it currently fails for raw commit-SHA pins even when pack and CI succeed.
 3. Commit the matching `.claude-plugin/marketplace.json`.
 4. Keep `AGENTS.md`, `CHANGELOG.md`, `CONTRIBUTING.md`, and `README.md` aligned.
