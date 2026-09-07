@@ -8,6 +8,8 @@ trees here. Upstream packages stay in their own repositories.
 1. Point `marketplace.packages[].ref` at an immutable commit SHA (preferred) or
    a repository-supported release tag. Record the matching package name,
    source (`owner/repo`), and `version` when the release version is known.
+   Verify the published release tag resolves to the pinned commit and its
+   package manifest declares the same version before updating the catalog.
 2. Do not edit `.claude-plugin/marketplace.json` by hand.
 3. Use apm-cli 0.30.0 (same pin as CI) and run `apm pack`. `apm marketplace check` is optional: it currently fails for raw commit-SHA pins even when pack and CI succeed.
 
