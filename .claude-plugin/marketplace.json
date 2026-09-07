@@ -8,11 +8,72 @@
     {
       "name": "okf",
       "description": "Open Knowledge Format — pure format standard and validator (Grok-native skill)",
+      "version": "0.2.1",
       "source": {
         "source": "github",
         "repo": "sergio-sisternes-epam/okf",
-        "ref": "d734f78c384e767e52ab81bf4c02ca5940d56363",
-        "sha": "d734f78c384e767e52ab81bf4c02ca5940d56363",
+        "ref": "5246f7b193b58a32ac8a15fc76aedf37c42b042c",
+        "sha": "5246f7b193b58a32ac8a15fc76aedf37c42b042c",
+        "tag_pattern": "v{version}"
+      }
+    },
+    {
+      "name": "atlas",
+      "description": "Durable OKF v0.2 knowledge substrate for process memory, schema governance, project knowledge graphs, and canonical CI gates on Atlas mounts",
+      "version": "0.9.0",
+      "source": {
+        "source": "github",
+        "repo": "sergio-sisternes-epam/atlas",
+        "ref": "2b6659e5440886c7abbd9ad10686fa3a0100813b",
+        "sha": "2b6659e5440886c7abbd9ad10686fa3a0100813b",
+        "tag_pattern": "v{version}"
+      }
+    },
+    {
+      "name": "discuss",
+      "description": "Run a durable discussion about a clear subject as an agent-maintained Atlas graph. Persist, prune, and test forming ideas. Not for implementation.",
+      "version": "0.3.8",
+      "source": {
+        "source": "github",
+        "repo": "sergio-sisternes-epam/discuss",
+        "ref": "d77c9f9c4c952d327811bfec9cfa764a6c56d1d6",
+        "sha": "d77c9f9c4c952d327811bfec9cfa764a6c56d1d6",
+        "tag_pattern": "v{version}"
+      }
+    },
+    {
+      "name": "think",
+      "description": "think-ramble, think-grill, and think-challenge thinking primitives. Conversation-only when no durable store is present.",
+      "version": "0.1.0",
+      "source": {
+        "source": "github",
+        "repo": "sergio-sisternes-epam/think",
+        "ref": "874613a67018c74ee95f857416fb315d2f80b92b",
+        "sha": "874613a67018c74ee95f857416fb315d2f80b92b",
+        "tag_pattern": "v{version}"
+      }
+    },
+    {
+      "name": "atlas-cartograph",
+      "description": "Live Atlas knowledge-graph canvas for GitHub Copilot App",
+      "version": "0.1.0",
+      "source": {
+        "source": "github",
+        "repo": "sergio-sisternes-epam/atlas-cartograph",
+        "ref": "2372272dc5c282f1b1a472483a412ef394971764",
+        "sha": "2372272dc5c282f1b1a472483a412ef394971764",
+        "tag_pattern": "v{version}"
+      }
+    },
+    {
+      "name": "autogenesis",
+      "description": "Grows a skillset from its own experience store. Core design process is genesis; memory via Atlas. Grok-native APM skill.",
+      "version": "0.4.1",
+      "source": {
+        "source": "github",
+        "repo": "sergio-sisternes-epam/autogenesis",
+        "ref": "990d4f1a3e761bafb0385c91a0afbde38b3bd9ea",
+        "sha": "990d4f1a3e761bafb0385c91a0afbde38b3bd9ea",
         "tag_pattern": "v{version}"
       }
     }
