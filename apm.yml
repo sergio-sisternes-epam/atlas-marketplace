@@ -22,7 +22,7 @@ marketplace:
       version: 0.9.0
       ref: 2b6659e5440886c7abbd9ad10686fa3a0100813b
     - name: discuss
-      description: Run a durable discussion about a clear subject as an agent-maintained Atlas graph. Persist, prune, and test forming ideas. Not for implement.
+      description: Run a durable discussion about a clear subject as an agent-maintained Atlas graph. Persist, prune, and test forming ideas. Not for implementation.
       source: sergio-sisternes-epam/discuss
       version: 0.3.8
       ref: d77c9f9c4c952d327811bfec9cfa764a6c56d1d6

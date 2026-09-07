@@ -33,7 +33,7 @@ Never modify those upstream repositories from this marketplace.
 ## Catalog change procedure
 
 1. Change only `marketplace.packages[]` in `apm.yml` (name, source, immutable `ref`, description).
-2. Run `apm marketplace check`, then `apm pack` with apm-cli 0.30.0 (same pin as CI).
+2. Run `apm pack` with apm-cli 0.30.0 (same pin as CI). `apm marketplace check` is optional: it currently fails for raw commit-SHA pins even when pack and CI succeed.
 3. Commit the matching `.claude-plugin/marketplace.json`.
 4. Keep `AGENTS.md`, `CHANGELOG.md`, `CONTRIBUTING.md`, and `README.md` aligned.
 5. Open a pull request; publish is merge to `main` after review and CI.

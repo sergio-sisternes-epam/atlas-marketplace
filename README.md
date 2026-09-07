@@ -38,7 +38,7 @@ when the project does not already declare one.
 ## Authoring a pin update
 
 1. Point `marketplace.packages[].ref` (or version) at the package commit/tag.
-2. Run `apm marketplace check`, then `apm pack` with apm-cli 0.30.0, and commit `.claude-plugin/marketplace.json`.
+2. Run `apm pack` with apm-cli 0.30.0 and commit `.claude-plugin/marketplace.json`. `apm marketplace check` is optional: it currently fails for raw commit-SHA pins even when pack and CI succeed.
 3. Keep `AGENTS.md`, `CHANGELOG.md`, `CONTRIBUTING.md`, and `README.md` aligned.
 4. Open PR; wait for CI; human review and merge.
 

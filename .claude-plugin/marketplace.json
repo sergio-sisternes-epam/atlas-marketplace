@@ -31,7 +31,7 @@
     },
     {
       "name": "discuss",
-      "description": "Run a durable discussion about a clear subject as an agent-maintained Atlas graph. Persist, prune, and test forming ideas. Not for implement.",
+      "description": "Run a durable discussion about a clear subject as an agent-maintained Atlas graph. Persist, prune, and test forming ideas. Not for implementation.",
       "version": "0.3.8",
       "source": {
         "source": "github",

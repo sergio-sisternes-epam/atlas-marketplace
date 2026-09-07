@@ -9,12 +9,7 @@ trees here. Upstream packages stay in their own repositories.
    a repository-supported release tag. Record the matching package name,
    source (`owner/repo`), and `version` when the release version is known.
 2. Do not edit `.claude-plugin/marketplace.json` by hand.
-3. Use apm-cli 0.30.0 (same pin as CI) and run:
-
-   ```bash
-   apm marketplace check
-   apm pack
-   ```
+3. Use apm-cli 0.30.0 (same pin as CI) and run `apm pack`. `apm marketplace check` is optional: it currently fails for raw commit-SHA pins even when pack and CI succeed.
 
 4. Commit `apm.yml` together with the generated `.claude-plugin/marketplace.json`.
 5. Review `AGENTS.md`, `CHANGELOG.md` (`Unreleased`), `CONTRIBUTING.md`, and
