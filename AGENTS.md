@@ -9,7 +9,7 @@ external packages; it does not vendor skill source trees.
 |------|------|
 | `apm.yml` | Authoritative marketplace catalog (`marketplace.packages`) |
 | `.claude-plugin/marketplace.json` | Generated consumer catalog; do not edit by hand |
-| `.github/workflows/marketplace-ci.yml` | CI adapter: layout validate → `apm pack` → drift check |
+| `.github/workflows/marketplace-ci.yml` | CI adapter: layout validate → `apm pack` (apm-cli 0.30.0) → drift check |
 | `README.md` | Consumer usage and pin table |
 | `CONTRIBUTING.md` | Pin-update and PR procedure |
 | `CHANGELOG.md` | User-visible catalog history (`Unreleased` first) |
@@ -33,7 +33,7 @@ Never modify those upstream repositories from this marketplace.
 ## Catalog change procedure
 
 1. Change only `marketplace.packages[]` in `apm.yml` (name, source, immutable `ref`, description).
-2. Run `apm marketplace check`, then `apm pack`.
+2. Run `apm marketplace check`, then `apm pack` with apm-cli 0.30.0 (same pin as CI).
 3. Commit the matching `.claude-plugin/marketplace.json`.
 4. Keep `AGENTS.md`, `CHANGELOG.md`, `CONTRIBUTING.md`, and `README.md` aligned.
 5. Open a pull request; publish is merge to `main` after review and CI.

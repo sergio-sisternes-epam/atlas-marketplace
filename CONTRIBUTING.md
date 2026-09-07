@@ -6,10 +6,10 @@ trees here. Upstream packages stay in their own repositories.
 ## Pin / registry change
 
 1. Point `marketplace.packages[].ref` at an immutable commit SHA (preferred) or
-   a repository-supported release tag. Record the matching package name and
-   source (`owner/repo`).
+   a repository-supported release tag. Record the matching package name,
+   source (`owner/repo`), and `version` when the release version is known.
 2. Do not edit `.claude-plugin/marketplace.json` by hand.
-3. Run:
+3. Use apm-cli 0.30.0 (same pin as CI) and run:
 
    ```bash
    apm marketplace check

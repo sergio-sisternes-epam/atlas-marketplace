@@ -32,13 +32,13 @@ when the project does not already declare one.
 
 - **Pin changes only via pull request** to `main` (no direct pin push).
 - Enable **branch protection** on `main`: required PR, required reviewers, required status check `validate-and-pack` once CI is active. See `docs/branch-protection.md`.
-- CI (GitHub Actions adapter): validate registry layout → `apm pack` → fail on `marketplace.json` drift.
+- CI (GitHub Actions adapter): validate registry layout → `apm pack` with `apm-cli==0.30.0` → fail on `marketplace.json` drift.
 - Canonical model lives in the apm skill (`references/ci-cd-canonical.md`); this workflow is an **example adapter**, not the model.
 
 ## Authoring a pin update
 
 1. Point `marketplace.packages[].ref` (or version) at the package commit/tag.
-2. Run `apm marketplace check`, then `apm pack`, and commit `.claude-plugin/marketplace.json`.
+2. Run `apm marketplace check`, then `apm pack` with apm-cli 0.30.0, and commit `.claude-plugin/marketplace.json`.
 3. Keep `AGENTS.md`, `CHANGELOG.md`, `CONTRIBUTING.md`, and `README.md` aligned.
 4. Open PR; wait for CI; human review and merge.
 
