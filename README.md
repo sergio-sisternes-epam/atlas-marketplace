@@ -11,7 +11,7 @@ Private APM marketplace **registry only** for Grok-native skills.
 | `discuss` | `sergio-sisternes-epam/discuss` | v0.3.9 | SHA `95b51910378fa8245b67e70a42cbf1be840b620b` |
 | `think` | `sergio-sisternes-epam/think` | v0.1.0 | SHA `874613a67018c74ee95f857416fb315d2f80b92b` |
 | `atlas-cartograph` | `sergio-sisternes-epam/atlas-cartograph` | v0.1.1 | SHA `3f9fe350cb745b2b122a5d1d667f98ac5783f1b8` |
-| `autogenesis` | `sergio-sisternes-epam/autogenesis` | v0.4.1 | SHA `990d4f1a3e761bafb0385c91a0afbde38b3bd9ea` |
+| `autogenesis` | `sergio-sisternes-epam/autogenesis` | v0.4.2 | SHA `01000d02c4c3588a4afc75a967f7d6002d116c9b` |
 
 ## Consumer (private)
 
