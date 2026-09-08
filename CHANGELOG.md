@@ -17,6 +17,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Changed
 
+- `atlas` pin from v0.9.0 to v0.9.1 (`a1074e5dfd8cc8236132e7615063628407e35b6a`), which resolves `okf` through this marketplace instead of a git SHA.
 - Catalog identity from `apm-marketplace` to `sergio-sisternes-epam`. Consumers must register with `apm marketplace add sergio-sisternes-epam/apm-marketplace --name sergio-sisternes-epam` and install as `pkg@sergio-sisternes-epam`.
 - `atlas-cartograph` pin from v0.1.0 to v0.1.1 (`3f9fe350cb745b2b122a5d1d667f98ac5783f1b8`).
 - `okf` pin from `d734f78c384e767e52ab81bf4c02ca5940d56363` to v0.2.1 (`5246f7b193b58a32ac8a15fc76aedf37c42b042c`).
