@@ -13,8 +13,14 @@ external packages; it does not vendor skill source trees.
 | `README.md` | Consumer usage and pin table |
 | `CONTRIBUTING.md` | Pin-update and PR procedure |
 | `CHANGELOG.md` | User-visible catalog history (`Unreleased` first) |
+| `atlas-mesh.json` | Consumer mesh pointer for process memory (not catalog) |
+| `.atlas/github.com/sergio-sisternes-epam/apm-marketplace-atlas` | Git submodule: operator Atlas store |
 
 Do not add `SKILL.md` or `.apm/skills/` at the marketplace root.
+
+Process memory lives in `sergio-sisternes-epam/apm-marketplace-atlas` (mounted
+under `.atlas/`). It is not a catalogued package. Do not vendor skill source
+there either.
 
 ## Current catalog pins
 

@@ -8,6 +8,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Added
 
+- Operator Atlas process-memory store `sergio-sisternes-epam/apm-marketplace-atlas`, mounted at `.atlas/github.com/sergio-sisternes-epam/apm-marketplace-atlas` (not a catalogued package).
 - Catalog entries for Atlas-ecosystem packages pinned to latest stable release commits:
   - `atlas` v0.9.0 (`2b6659e5440886c7abbd9ad10686fa3a0100813b`)
   - `discuss` v0.3.8 (`d77c9f9c4c952d327811bfec9cfa764a6c56d1d6`)

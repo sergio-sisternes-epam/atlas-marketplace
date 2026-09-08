@@ -1,0 +1,4 @@
+[submodule ".atlas/github.com/sergio-sisternes-epam/apm-marketplace-atlas"]
+	path = .atlas/github.com/sergio-sisternes-epam/apm-marketplace-atlas
+	url = https://github.com/sergio-sisternes-epam/apm-marketplace-atlas.git
+	branch = main
