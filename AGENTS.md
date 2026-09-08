@@ -26,7 +26,7 @@ each external package:
 - `discuss` → `sergio-sisternes-epam/discuss` @ `95b51910378fa8245b67e70a42cbf1be840b620b` (v0.3.9)
 - `think` → `sergio-sisternes-epam/think` @ `874613a67018c74ee95f857416fb315d2f80b92b` (v0.1.0)
 - `atlas-cartograph` → `sergio-sisternes-epam/atlas-cartograph` @ `3f9fe350cb745b2b122a5d1d667f98ac5783f1b8` (v0.1.1)
-- `autogenesis` → `sergio-sisternes-epam/autogenesis` @ `990d4f1a3e761bafb0385c91a0afbde38b3bd9ea` (v0.4.1)
+- `autogenesis` → `sergio-sisternes-epam/autogenesis` @ `01000d02c4c3588a4afc75a967f7d6002d116c9b` (v0.4.2)
 
 Never modify those upstream repositories from this marketplace.
 

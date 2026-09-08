@@ -68,12 +68,12 @@
     {
       "name": "autogenesis",
       "description": "Grows a skillset from its own experience store. Core design process is genesis; memory via Atlas. Grok-native APM skill.",
-      "version": "0.4.1",
+      "version": "0.4.2",
       "source": {
         "source": "github",
         "repo": "sergio-sisternes-epam/autogenesis",
-        "ref": "990d4f1a3e761bafb0385c91a0afbde38b3bd9ea",
-        "sha": "990d4f1a3e761bafb0385c91a0afbde38b3bd9ea",
+        "ref": "01000d02c4c3588a4afc75a967f7d6002d116c9b",
+        "sha": "01000d02c4c3588a4afc75a967f7d6002d116c9b",
         "tag_pattern": "v{version}"
       }
     }
