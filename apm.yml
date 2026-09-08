@@ -24,8 +24,8 @@ marketplace:
     - name: discuss
       description: Run a durable discussion about a clear subject as an agent-maintained Atlas graph. Persist, prune, and test forming ideas. Not for implementation.
       source: sergio-sisternes-epam/discuss
-      version: 0.3.8
-      ref: d77c9f9c4c952d327811bfec9cfa764a6c56d1d6
+      version: 0.3.9
+      ref: 95b51910378fa8245b67e70a42cbf1be840b620b
     - name: think
       description: think-ramble, think-grill, and think-challenge thinking primitives. Conversation-only when no durable store is present.
       source: sergio-sisternes-epam/think
