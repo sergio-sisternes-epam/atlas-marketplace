@@ -21,6 +21,24 @@ trees here. Upstream packages stay in their own repositories.
 
 Use `.github/pull_request_template.md` as the PR checklist.
 
+## Published marketplace name
+
+Catalog `name` is `sergio-sisternes-epam`. Document consumer registration as:
+
+```bash
+apm marketplace add sergio-sisternes-epam/apm-marketplace --name sergio-sisternes-epam
+apm install <pkg>@sergio-sisternes-epam
+```
+
+`--name` is required because `apm marketplace add` defaults to the GitHub repo
+name (`apm-marketplace`). Do not rename this GitHub repository to change the
+alias.
+
+`apm marketplace audit <name>` warns when a catalogued package's
+`dependencies.apm` uses git shorthand instead of `pkg@sergio-sisternes-epam`.
+Those fixes belong in the package repositories. After they release, re-pin
+here. Do not edit upstream trees from this marketplace.
+
 ## Boundaries
 
 - Do not push pins directly to `main`.

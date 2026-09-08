@@ -16,14 +16,19 @@ Private APM marketplace **registry only** for Grok-native skills.
 ## Consumer (private)
 
 ```bash
-apm marketplace add sergio-sisternes-epam/apm-marketplace
-apm install okf@apm-marketplace
-apm install atlas@apm-marketplace
-apm install discuss@apm-marketplace
-apm install think@apm-marketplace
-apm install atlas-cartograph@apm-marketplace
-apm install autogenesis@apm-marketplace
+apm marketplace add sergio-sisternes-epam/apm-marketplace --name sergio-sisternes-epam
+apm install okf@sergio-sisternes-epam
+apm install atlas@sergio-sisternes-epam
+apm install discuss@sergio-sisternes-epam
+apm install think@sergio-sisternes-epam
+apm install atlas-cartograph@sergio-sisternes-epam
+apm install autogenesis@sergio-sisternes-epam
 ```
+
+`apm marketplace add` defaults the local name to the GitHub repo (`apm-marketplace`).
+Pass `--name sergio-sisternes-epam` so installs and package deps resolve as
+`pkg@sergio-sisternes-epam`. Re-add if you previously registered this catalog as
+`me` or `apm-marketplace`.
 
 Requires GitHub auth for private repos. Optional `-t` selects a consumer target
 when the project does not already declare one.
