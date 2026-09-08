@@ -30,6 +30,21 @@ each external package:
 
 Never modify those upstream repositories from this marketplace.
 
+## Published marketplace name
+
+Catalog `name` is `sergio-sisternes-epam`. Consumers must register with:
+
+```bash
+apm marketplace add sergio-sisternes-epam/apm-marketplace --name sergio-sisternes-epam
+```
+
+Package deps and installs use `pkg@sergio-sisternes-epam`. Do not use the
+GitHub-repo default `apm-marketplace` or a local alias such as `me`.
+
+`apm marketplace audit` bypass warnings come from upstream git-shorthand
+`dependencies.apm`. Fix those in the package repositories (child sessions),
+then re-pin here. Do not edit those repos from this marketplace worktree.
+
 ## Catalog change procedure
 
 1. Change only `marketplace.packages[]` in `apm.yml` (name, source, version, immutable `ref`, description). Keep `version` aligned with the package manifest at the pinned release commit.
