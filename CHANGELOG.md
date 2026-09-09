@@ -23,5 +23,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `autogenesis` pin from v0.4.1 to v0.4.2 (`01000d02c4c3588a4afc75a967f7d6002d116c9b`), which resolves Atlas, OKF, Discuss, and Think through this marketplace instead of git shorthands.
 - Catalog identity from `apm-marketplace` to `sergio-sisternes-epam`. Consumers must register with `apm marketplace add sergio-sisternes-epam/apm-marketplace --name sergio-sisternes-epam` and install as `pkg@sergio-sisternes-epam`.
 - `atlas-cartograph` pin from v0.1.0 to v0.1.1 (`3f9fe350cb745b2b122a5d1d667f98ac5783f1b8`).
+- `atlas-cartograph` pin from v0.1.1 to v0.2.0 (`584c6843fd04e0fe27c2ba67bb9be67158b37a4c`), which adds schema-aware Core/contribution type layers, consistent navigation-index labels, hookless native startup, and state-preserving reload.
 - `okf` pin from `d734f78c384e767e52ab81bf4c02ca5940d56363` to v0.2.1 (`5246f7b193b58a32ac8a15fc76aedf37c42b042c`).
 - Marketplace CI adapter pin from `apm-cli==0.28.0` to `apm-cli==0.30.0` so pack and drift checks match local generation.
