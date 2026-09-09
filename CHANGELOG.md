@@ -17,6 +17,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Changed
 
+- `atlas-cartograph` pin from v0.2.0 to v0.3.0 (`fe6de71e56422bda09dd0a92cf59d683d883e396`), which adds volumetric galaxies and an always-visible "Search stars" toolbar input with keyboard-accessible results.
 - `atlas` pin from v0.9.1 to v0.10.0 (`3818586da56331949b03fe746ef21693d3c84169`), which adds opt-in SCHEMA 2.0 Semantic Memory Recall.
 - `atlas` pin from v0.9.0 to v0.9.1 (`a1074e5dfd8cc8236132e7615063628407e35b6a`), which resolves `okf` through this marketplace instead of a git SHA.
 - `discuss` pin from v0.3.8 to v0.3.9 (`95b51910378fa8245b67e70a42cbf1be840b620b`), which resolves `atlas` through this marketplace instead of git tag `v0.8.15`.
