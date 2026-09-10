@@ -7,7 +7,7 @@ Private Atlas APM marketplace **registry only**.
 | Package | Source | Release | Pin |
 |---------|--------|---------|-----|
 | `okf` | `sergio-sisternes-epam/okf` | v0.2.1 | SHA `5246f7b193b58a32ac8a15fc76aedf37c42b042c` |
-| `atlas` | `sergio-sisternes-epam/atlas` | v0.11.1 | SHA `75b7d317d7619d14951d9e2ecc163d87b9c10f38` |
+| `atlas` | `sergio-sisternes-epam/atlas` | v0.11.2 | SHA `579e8090273ce991ea0717abed0775dc03f28de2` |
 | `discuss` | `sergio-sisternes-epam/discuss` | v0.3.9 | SHA `95b51910378fa8245b67e70a42cbf1be840b620b` |
 | `think` | `sergio-sisternes-epam/think` | v0.1.0 | SHA `874613a67018c74ee95f857416fb315d2f80b92b` |
 | `atlas-cartograph` | `sergio-sisternes-epam/atlas-cartograph` | v0.4.0 | SHA `0e391ffb530252874b5ed163a17228a471789a12` |
@@ -15,8 +15,8 @@ Private Atlas APM marketplace **registry only**.
 
 ## Consumer (private)
 
-Atlas v0.11.1 connects help knowledge and Cartograph onboarding design only;
-runtime help, getting-started, and visualise paths remain unimplemented.
+Atlas v0.11.2 resolves `okf` through this marketplace (`okf@atlas`). Runtime
+help, getting-started, and visualise paths remain unimplemented.
 
 ```bash
 apm marketplace add sergio-sisternes-epam/atlas-marketplace --name atlas
