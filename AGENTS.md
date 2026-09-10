@@ -52,3 +52,12 @@ then re-pin here. Do not edit those repos from this marketplace worktree.
 3. Commit the matching `.claude-plugin/marketplace.json`.
 4. Keep `AGENTS.md`, `CHANGELOG.md`, `CONTRIBUTING.md`, and `README.md` aligned.
 5. Open a pull request; publish is merge to `main` after review and CI.
+
+## Default-branch governance
+
+The active `Protect default branch` ruleset targets the default branch (`main`).
+It requires PRs, up-to-date `validate-and-pack` from GitHub Actions, and resolved
+review conversations; force pushes, deletion, and bypasses are not allowed.
+Copilot review is requested on non-draft PRs and new pushes. The owner approved
+zero required approvals for this single-maintainer repository. Do not treat an
+automatic review request as completed review or as authority to merge.

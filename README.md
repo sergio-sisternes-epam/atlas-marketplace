@@ -36,7 +36,8 @@ when the project does not already declare one.
 ## Governance
 
 - **Pin changes only via pull request** to `main` (no direct pin push).
-- Enable **branch protection** on `main`: required PR, required reviewers, required status check `validate-and-pack` once CI is active. See `docs/branch-protection.md`.
+- The active **Protect default branch** ruleset requires PRs, up-to-date `validate-and-pack` checks from GitHub Actions, and resolved review conversations. It blocks force pushes and deletion, with no bypass actors.
+- Copilot reviews are requested automatically for non-draft PRs and new pushes. No approving review is required under the owner's single-maintainer policy; automatic review requests are not a review-completion merge gate. See `docs/branch-protection.md`.
 - CI (GitHub Actions adapter): validate registry layout → `apm pack` with `apm-cli==0.30.0` → fail on `marketplace.json` drift.
 - Canonical model lives in the apm skill (`references/ci-cd-canonical.md`); this workflow is an **example adapter**, not the model.
 

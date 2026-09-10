@@ -21,6 +21,14 @@ trees here. Upstream packages stay in their own repositories.
 6. Open a pull request against `main`. Wait for `validate-and-pack`. Human
    review and merge publishes the catalog.
 
+The active default-branch ruleset requires the branch to be up to date and
+`validate-and-pack` to pass from GitHub Actions. Resolve all review conversations
+before merging. Copilot review is automatically requested for non-draft PRs and
+new pushes; wait for and assess its feedback before the owner merges. Automatic
+requests do not enforce review completion. Under the owner's single-maintainer
+policy, zero approving reviews are required. Force pushes, deletion, and bypasses
+are blocked. See `docs/branch-protection.md`.
+
 Use `.github/pull_request_template.md` as the PR checklist.
 
 ## Published marketplace name
