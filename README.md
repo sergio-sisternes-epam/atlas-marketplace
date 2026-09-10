@@ -10,7 +10,7 @@ Private APM marketplace **registry only** for Grok-native skills.
 | `atlas` | `sergio-sisternes-epam/atlas` | v0.11.0 | SHA `1c5a4158d5ff091bc2de78d6303cddf7e9bb4418` |
 | `discuss` | `sergio-sisternes-epam/discuss` | v0.3.9 | SHA `95b51910378fa8245b67e70a42cbf1be840b620b` |
 | `think` | `sergio-sisternes-epam/think` | v0.1.0 | SHA `874613a67018c74ee95f857416fb315d2f80b92b` |
-| `atlas-cartograph` | `sergio-sisternes-epam/atlas-cartograph` | v0.3.0 | SHA `fe6de71e56422bda09dd0a92cf59d683d883e396` |
+| `atlas-cartograph` | `sergio-sisternes-epam/atlas-cartograph` | v0.4.0 | SHA `0e391ffb530252874b5ed163a17228a471789a12` |
 | `autogenesis` | `sergio-sisternes-epam/autogenesis` | v0.4.2 | SHA `01000d02c4c3588a4afc75a967f7d6002d116c9b` |
 
 ## Consumer (private)
@@ -33,10 +33,23 @@ Pass `--name sergio-sisternes-epam` so installs and package deps resolve as
 Requires GitHub auth for private repos. Optional `-t` selects a consumer target
 when the project does not already declare one.
 
+Existing consumers need access to both this private marketplace and the private
+package repository. After a catalog PR merges, explicitly refresh the index and
+update the dependency from the consuming project:
+
+```bash
+apm marketplace update sergio-sisternes-epam
+apm update atlas-cartograph@sergio-sisternes-epam
+```
+
+Catalog publication does not automatically update installed extensions or
+user-scope dependencies.
+
 ## Governance
 
 - **Pin changes only via pull request** to `main` (no direct pin push).
-- Enable **branch protection** on `main`: required PR, required reviewers, required status check `validate-and-pack` once CI is active. See `docs/branch-protection.md`.
+- The active **Protect default branch** ruleset requires PRs, up-to-date `validate-and-pack` checks from GitHub Actions, and resolved review conversations. It blocks force pushes and deletion, with no bypass actors.
+- Copilot reviews are requested automatically for non-draft PRs and new pushes. No approving review is required under the owner's single-maintainer policy; automatic review requests are not a review-completion merge gate. See `docs/branch-protection.md`.
 - CI (GitHub Actions adapter): validate registry layout → `apm pack` with `apm-cli==0.30.0` → fail on `marketplace.json` drift.
 - Canonical model lives in the apm skill (`references/ci-cd-canonical.md`); this workflow is an **example adapter**, not the model.
 

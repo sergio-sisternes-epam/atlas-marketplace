@@ -17,7 +17,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Changed
 
+- `atlas-cartograph` pin from v0.3.0 to v0.4.0 (`0e391ffb530252874b5ed163a17228a471789a12`), which improves session chat, full-screen citation navigation, draft retention, and the Options and search layout.
 - `atlas` pin from v0.10.0 to v0.11.0 (`1c5a4158d5ff091bc2de78d6303cddf7e9bb4418`), which adds shared vs dedicated store hosting (`atlas store init` / `store rehost`).
+- Default-branch governance now uses an active ruleset requiring PRs, up-to-date `validate-and-pack` checks, and resolved review conversations, with no force pushes, deletion, or bypass actors. Copilot review is automatically requested for non-draft PRs and new pushes; the owner approved zero required approvals for the single-maintainer workflow.
 - `atlas-cartograph` pin from v0.2.0 to v0.3.0 (`fe6de71e56422bda09dd0a92cf59d683d883e396`), which adds volumetric galaxies and an always-visible "Search stars" toolbar input with keyboard-accessible results.
 - `atlas` pin from v0.9.1 to v0.10.0 (`3818586da56331949b03fe746ef21693d3c84169`), which adds opt-in SCHEMA 2.0 Semantic Memory Recall.
 - `atlas` pin from v0.9.0 to v0.9.1 (`a1074e5dfd8cc8236132e7615063628407e35b6a`), which resolves `okf` through this marketplace instead of a git SHA.

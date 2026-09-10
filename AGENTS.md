@@ -25,7 +25,7 @@ each external package:
 - `atlas` → `sergio-sisternes-epam/atlas` @ `1c5a4158d5ff091bc2de78d6303cddf7e9bb4418` (v0.11.0)
 - `discuss` → `sergio-sisternes-epam/discuss` @ `95b51910378fa8245b67e70a42cbf1be840b620b` (v0.3.9)
 - `think` → `sergio-sisternes-epam/think` @ `874613a67018c74ee95f857416fb315d2f80b92b` (v0.1.0)
-- `atlas-cartograph` → `sergio-sisternes-epam/atlas-cartograph` @ `fe6de71e56422bda09dd0a92cf59d683d883e396` (v0.3.0)
+- `atlas-cartograph` → `sergio-sisternes-epam/atlas-cartograph` @ `0e391ffb530252874b5ed163a17228a471789a12` (v0.4.0)
 - `autogenesis` → `sergio-sisternes-epam/autogenesis` @ `01000d02c4c3588a4afc75a967f7d6002d116c9b` (v0.4.2)
 
 Never modify those upstream repositories from this marketplace.
@@ -52,3 +52,12 @@ then re-pin here. Do not edit those repos from this marketplace worktree.
 3. Commit the matching `.claude-plugin/marketplace.json`.
 4. Keep `AGENTS.md`, `CHANGELOG.md`, `CONTRIBUTING.md`, and `README.md` aligned.
 5. Open a pull request; publish is merge to `main` after review and CI.
+
+## Default-branch governance
+
+The active `Protect default branch` ruleset targets the default branch (`main`).
+It requires PRs, up-to-date `validate-and-pack` from GitHub Actions, and resolved
+review conversations; force pushes, deletion, and bypasses are not allowed.
+Copilot review is requested on non-draft PRs and new pushes. The owner approved
+zero required approvals for this single-maintainer repository. Do not treat an
+automatic review request as completed review or as authority to merge.
