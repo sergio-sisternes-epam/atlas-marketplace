@@ -1,6 +1,6 @@
 # Default-branch protection
 
-The active [Protect default branch ruleset](https://github.com/sergio-sisternes-epam/apm-marketplace/rules/22792606)
+The active [Protect default branch ruleset](https://github.com/sergio-sisternes-epam/atlas-marketplace/rules/22792606)
 targets `~DEFAULT_BRANCH` (currently `main`). It was configured with owner approval
 on 2026-09-10.
 

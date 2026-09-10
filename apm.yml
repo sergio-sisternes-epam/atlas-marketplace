@@ -1,6 +1,6 @@
-name: sergio-sisternes-epam
+name: atlas
 version: 0.1.0
-description: Private APM marketplace for Grok-native skills (registry only)
+description: Private Atlas APM marketplace (registry only)
 author: sergio-sisternes-epam
 license: MIT
 

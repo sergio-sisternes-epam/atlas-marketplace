@@ -1,6 +1,6 @@
-# Agent notes for apm-marketplace
+# Agent notes for atlas-marketplace
 
-This repository is a **registry-only** private APM marketplace. It indexes
+This repository is a **registry-only** private Atlas APM marketplace. It indexes
 external packages; it does not vendor skill source trees.
 
 ## Source versus generated
@@ -35,14 +35,15 @@ Runtime help, getting-started, and visualise paths remain unimplemented.
 
 ## Published marketplace name
 
-Catalog `name` is `sergio-sisternes-epam`. Consumers must register with:
+Catalog `name` is `atlas`. Consumers must register with:
 
 ```bash
-apm marketplace add sergio-sisternes-epam/apm-marketplace --name sergio-sisternes-epam
+apm marketplace add sergio-sisternes-epam/atlas-marketplace --name atlas
 ```
 
-Package deps and installs use `pkg@sergio-sisternes-epam`. Do not use the
-GitHub-repo default `apm-marketplace` or a local alias such as `me`.
+Package deps and installs use `pkg@atlas`. Do not use the GitHub-repo default
+`atlas-marketplace` or a previous local alias such as `sergio-sisternes-epam`,
+`apm-marketplace`, or `me`.
 
 `apm marketplace audit` bypass warnings come from upstream git-shorthand
 `dependencies.apm`. Fix those in the package repositories (child sessions),
