@@ -32,12 +32,12 @@
     {
       "name": "discuss",
       "description": "Run a durable discussion about a clear subject as an agent-maintained Atlas graph. Persist, prune, and test forming ideas. Not for implementation.",
-      "version": "0.3.9",
+      "version": "0.3.10",
       "source": {
         "source": "github",
         "repo": "sergio-sisternes-epam/discuss",
-        "ref": "95b51910378fa8245b67e70a42cbf1be840b620b",
-        "sha": "95b51910378fa8245b67e70a42cbf1be840b620b",
+        "ref": "c1c0936d9a0346dce7d877646046c918de335d69",
+        "sha": "c1c0936d9a0346dce7d877646046c918de335d69",
         "tag_pattern": "v{version}"
       }
     },
