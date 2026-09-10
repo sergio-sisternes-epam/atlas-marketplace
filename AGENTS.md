@@ -25,13 +25,14 @@ each external package:
 - `atlas` → `sergio-sisternes-epam/atlas` @ `579e8090273ce991ea0717abed0775dc03f28de2` (v0.11.2)
 - `discuss` → `sergio-sisternes-epam/discuss` @ `c1c0936d9a0346dce7d877646046c918de335d69` (v0.3.10)
 - `think` → `sergio-sisternes-epam/think` @ `874613a67018c74ee95f857416fb315d2f80b92b` (v0.1.0)
-- `atlas-cartograph` → `sergio-sisternes-epam/atlas-cartograph` @ `0e391ffb530252874b5ed163a17228a471789a12` (v0.4.0)
+- `atlas-cartograph` → `sergio-sisternes-epam/atlas-cartograph` @ `961297c0b88a65473e8922fe14aee937d481c059` (v0.4.1)
 - `autogenesis` → `sergio-sisternes-epam/autogenesis` @ `b6d8556e183c78cc0293feaa096e0db3b0cbdc01` (v0.4.3)
 
 Never modify those upstream repositories from this marketplace.
 
 Atlas v0.11.2 resolves `okf` through this marketplace (`okf@atlas`).
 Discuss v0.3.10 resolves `atlas` through this marketplace (`atlas@atlas`).
+Atlas-cartograph v0.4.1 resolves `atlas` through this marketplace (`atlas@atlas`).
 Autogenesis v0.4.3 resolves Atlas, OKF, Discuss, and Think through this marketplace (`pkg@atlas`).
 Runtime help, getting-started, and visualise paths remain unimplemented.
 

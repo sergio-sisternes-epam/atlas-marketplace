@@ -56,12 +56,12 @@
     {
       "name": "atlas-cartograph",
       "description": "Live Atlas knowledge-graph canvas for GitHub Copilot App",
-      "version": "0.4.0",
+      "version": "0.4.1",
       "source": {
         "source": "github",
         "repo": "sergio-sisternes-epam/atlas-cartograph",
-        "ref": "0e391ffb530252874b5ed163a17228a471789a12",
-        "sha": "0e391ffb530252874b5ed163a17228a471789a12",
+        "ref": "961297c0b88a65473e8922fe14aee937d481c059",
+        "sha": "961297c0b88a65473e8922fe14aee937d481c059",
         "tag_pattern": "v{version}"
       }
     },
