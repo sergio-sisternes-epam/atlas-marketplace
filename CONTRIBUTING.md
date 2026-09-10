@@ -12,6 +12,8 @@ trees here. Upstream packages stay in their own repositories.
    package manifest declares the same version before updating the catalog.
    Include the source release URL and resolved commit SHA in the pull request
    so reviewers can verify the pin's provenance.
+   Keep release-scope qualifications in catalog documentation: knowledge/design
+   releases must not be described as implemented runtime features.
    The release handoff must also state that existing consumers explicitly
    refresh the marketplace index and update their dependency with access to
    both private repositories; publication does not update installed extensions.

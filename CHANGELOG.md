@@ -17,6 +17,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Changed
 
+- `atlas` pin from v0.11.0 to v0.11.1 (`75b7d317d7619d14951d9e2ecc163d87b9c10f38`), which connects Atlas help knowledge and Cartograph onboarding design. This is a knowledge/design release only; runtime help, getting-started, and visualise paths remain unimplemented.
 - `atlas-cartograph` pin from v0.3.0 to v0.4.0 (`0e391ffb530252874b5ed163a17228a471789a12`), which improves session chat, full-screen citation navigation, draft retention, and the Options and search layout.
 - `atlas` pin from v0.10.0 to v0.11.0 (`1c5a4158d5ff091bc2de78d6303cddf7e9bb4418`), which adds shared vs dedicated store hosting (`atlas store init` / `store rehost`).
 - Default-branch governance now uses an active ruleset requiring PRs, up-to-date `validate-and-pack` checks, and resolved review conversations, with no force pushes, deletion, or bypass actors. Copilot review is automatically requested for non-draft PRs and new pushes; the owner approved zero required approvals for the single-maintainer workflow.
