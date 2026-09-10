@@ -7,13 +7,16 @@ Private APM marketplace **registry only** for Grok-native skills.
 | Package | Source | Release | Pin |
 |---------|--------|---------|-----|
 | `okf` | `sergio-sisternes-epam/okf` | v0.2.1 | SHA `5246f7b193b58a32ac8a15fc76aedf37c42b042c` |
-| `atlas` | `sergio-sisternes-epam/atlas` | v0.11.0 | SHA `1c5a4158d5ff091bc2de78d6303cddf7e9bb4418` |
+| `atlas` | `sergio-sisternes-epam/atlas` | v0.11.1 | SHA `75b7d317d7619d14951d9e2ecc163d87b9c10f38` |
 | `discuss` | `sergio-sisternes-epam/discuss` | v0.3.9 | SHA `95b51910378fa8245b67e70a42cbf1be840b620b` |
 | `think` | `sergio-sisternes-epam/think` | v0.1.0 | SHA `874613a67018c74ee95f857416fb315d2f80b92b` |
 | `atlas-cartograph` | `sergio-sisternes-epam/atlas-cartograph` | v0.4.0 | SHA `0e391ffb530252874b5ed163a17228a471789a12` |
 | `autogenesis` | `sergio-sisternes-epam/autogenesis` | v0.4.2 | SHA `01000d02c4c3588a4afc75a967f7d6002d116c9b` |
 
 ## Consumer (private)
+
+Atlas v0.11.1 connects help knowledge and Cartograph onboarding design only;
+runtime help, getting-started, and visualise paths remain unimplemented.
 
 ```bash
 apm marketplace add sergio-sisternes-epam/apm-marketplace --name sergio-sisternes-epam
@@ -39,6 +42,7 @@ update the dependency from the consuming project:
 
 ```bash
 apm marketplace update sergio-sisternes-epam
+apm update atlas@sergio-sisternes-epam
 apm update atlas-cartograph@sergio-sisternes-epam
 ```
 
