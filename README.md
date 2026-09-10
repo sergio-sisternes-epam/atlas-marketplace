@@ -7,7 +7,7 @@ Private APM marketplace **registry only** for Grok-native skills.
 | Package | Source | Release | Pin |
 |---------|--------|---------|-----|
 | `okf` | `sergio-sisternes-epam/okf` | v0.2.1 | SHA `5246f7b193b58a32ac8a15fc76aedf37c42b042c` |
-| `atlas` | `sergio-sisternes-epam/atlas` | v0.10.0 | SHA `3818586da56331949b03fe746ef21693d3c84169` |
+| `atlas` | `sergio-sisternes-epam/atlas` | v0.11.0 | SHA `1c5a4158d5ff091bc2de78d6303cddf7e9bb4418` |
 | `discuss` | `sergio-sisternes-epam/discuss` | v0.3.9 | SHA `95b51910378fa8245b67e70a42cbf1be840b620b` |
 | `think` | `sergio-sisternes-epam/think` | v0.1.0 | SHA `874613a67018c74ee95f857416fb315d2f80b92b` |
 | `atlas-cartograph` | `sergio-sisternes-epam/atlas-cartograph` | v0.3.0 | SHA `fe6de71e56422bda09dd0a92cf59d683d883e396` |

@@ -22,7 +22,7 @@ Pins are immutable commit SHAs for the latest verified stable GitHub release of
 each external package:
 
 - `okf` → `sergio-sisternes-epam/okf` @ `5246f7b193b58a32ac8a15fc76aedf37c42b042c` (v0.2.1)
-- `atlas` → `sergio-sisternes-epam/atlas` @ `3818586da56331949b03fe746ef21693d3c84169` (v0.10.0)
+- `atlas` → `sergio-sisternes-epam/atlas` @ `1c5a4158d5ff091bc2de78d6303cddf7e9bb4418` (v0.11.0)
 - `discuss` → `sergio-sisternes-epam/discuss` @ `95b51910378fa8245b67e70a42cbf1be840b620b` (v0.3.9)
 - `think` → `sergio-sisternes-epam/think` @ `874613a67018c74ee95f857416fb315d2f80b92b` (v0.1.0)
 - `atlas-cartograph` → `sergio-sisternes-epam/atlas-cartograph` @ `fe6de71e56422bda09dd0a92cf59d683d883e396` (v0.3.0)
