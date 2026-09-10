@@ -17,6 +17,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Changed
 
+- `atlas-cartograph` pin from v0.4.0 to v0.4.1 (`961297c0b88a65473e8922fe14aee937d481c059`), which resolves `atlas` through marketplace `atlas` (`atlas@atlas`).
 - `autogenesis` pin from v0.4.2 to v0.4.3 (`b6d8556e183c78cc0293feaa096e0db3b0cbdc01`), which resolves Atlas, OKF, Discuss, and Think through marketplace `atlas` (`pkg@atlas`).
 - `discuss` pin from v0.3.9 to v0.3.10 (`c1c0936d9a0346dce7d877646046c918de335d69`), which resolves `atlas` through marketplace `atlas` (`atlas@atlas`).
 - `atlas` pin from v0.11.1 to v0.11.2 (`579e8090273ce991ea0717abed0775dc03f28de2`), which resolves `okf` through marketplace `atlas` (`okf@atlas`).
