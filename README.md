@@ -1,6 +1,6 @@
-# apm-marketplace
+# atlas-marketplace
 
-Private APM marketplace **registry only** for Grok-native skills.
+Private Atlas APM marketplace **registry only**.
 
 ## Packages
 
@@ -19,19 +19,19 @@ Atlas v0.11.1 connects help knowledge and Cartograph onboarding design only;
 runtime help, getting-started, and visualise paths remain unimplemented.
 
 ```bash
-apm marketplace add sergio-sisternes-epam/apm-marketplace --name sergio-sisternes-epam
-apm install okf@sergio-sisternes-epam
-apm install atlas@sergio-sisternes-epam
-apm install discuss@sergio-sisternes-epam
-apm install think@sergio-sisternes-epam
-apm install atlas-cartograph@sergio-sisternes-epam
-apm install autogenesis@sergio-sisternes-epam
+apm marketplace add sergio-sisternes-epam/atlas-marketplace --name atlas
+apm install okf@atlas
+apm install atlas@atlas
+apm install discuss@atlas
+apm install think@atlas
+apm install atlas-cartograph@atlas
+apm install autogenesis@atlas
 ```
 
-`apm marketplace add` defaults the local name to the GitHub repo (`apm-marketplace`).
-Pass `--name sergio-sisternes-epam` so installs and package deps resolve as
-`pkg@sergio-sisternes-epam`. Re-add if you previously registered this catalog as
-`me` or `apm-marketplace`.
+`apm marketplace add` defaults the local name to the GitHub repo (`atlas-marketplace`).
+Pass `--name atlas` so installs and package deps resolve as `pkg@atlas`. Re-add
+if you previously registered this catalog as `sergio-sisternes-epam`,
+`apm-marketplace`, or `me`.
 
 Requires GitHub auth for private repos. Optional `-t` selects a consumer target
 when the project does not already declare one.
@@ -41,9 +41,9 @@ package repository. After a catalog PR merges, explicitly refresh the index and
 update the dependency from the consuming project:
 
 ```bash
-apm marketplace update sergio-sisternes-epam
-apm update atlas@sergio-sisternes-epam
-apm update atlas-cartograph@sergio-sisternes-epam
+apm marketplace update atlas
+apm update atlas@atlas
+apm update atlas-cartograph@atlas
 ```
 
 Catalog publication does not automatically update installed extensions or
