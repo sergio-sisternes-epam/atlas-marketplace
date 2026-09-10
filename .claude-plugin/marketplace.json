@@ -20,12 +20,12 @@
     {
       "name": "atlas",
       "description": "Durable OKF v0.2 knowledge substrate for process memory, schema governance, project knowledge graphs, and canonical CI gates on Atlas mounts",
-      "version": "0.11.1",
+      "version": "0.11.2",
       "source": {
         "source": "github",
         "repo": "sergio-sisternes-epam/atlas",
-        "ref": "75b7d317d7619d14951d9e2ecc163d87b9c10f38",
-        "sha": "75b7d317d7619d14951d9e2ecc163d87b9c10f38",
+        "ref": "579e8090273ce991ea0717abed0775dc03f28de2",
+        "sha": "579e8090273ce991ea0717abed0775dc03f28de2",
         "tag_pattern": "v{version}"
       }
     },

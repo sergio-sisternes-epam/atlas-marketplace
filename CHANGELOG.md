@@ -17,6 +17,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Changed
 
+- `atlas` pin from v0.11.1 to v0.11.2 (`579e8090273ce991ea0717abed0775dc03f28de2`), which resolves `okf` through marketplace `atlas` (`okf@atlas`).
 - Catalog identity from `sergio-sisternes-epam` to `atlas`. GitHub repository renamed to `sergio-sisternes-epam/atlas-marketplace`. Consumers must register with `apm marketplace add sergio-sisternes-epam/atlas-marketplace --name atlas` and install as `pkg@atlas`.
 - `atlas` pin from v0.11.0 to v0.11.1 (`75b7d317d7619d14951d9e2ecc163d87b9c10f38`), which connects Atlas help knowledge and Cartograph onboarding design. This is a knowledge/design release only; runtime help, getting-started, and visualise paths remain unimplemented.
 - `atlas-cartograph` pin from v0.3.0 to v0.4.0 (`0e391ffb530252874b5ed163a17228a471789a12`), which improves session chat, full-screen citation navigation, draft retention, and the Options and search layout.
