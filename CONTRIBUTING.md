@@ -12,6 +12,9 @@ trees here. Upstream packages stay in their own repositories.
    package manifest declares the same version before updating the catalog.
    Include the source release URL and resolved commit SHA in the pull request
    so reviewers can verify the pin's provenance.
+   The release handoff must also state that existing consumers explicitly
+   refresh the marketplace index and update their dependency with access to
+   both private repositories; publication does not update installed extensions.
 2. Do not edit `.claude-plugin/marketplace.json` by hand.
 3. Use apm-cli 0.30.0 (same pin as CI) and run `apm pack`. `apm marketplace check` is optional: it currently fails for raw commit-SHA pins even when pack and CI succeed.
 
