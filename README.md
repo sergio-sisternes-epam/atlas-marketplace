@@ -12,14 +12,15 @@ it does not vendor package source.
 | `discuss` | `sergio-sisternes-epam/discuss` | v0.3.10 | SHA `c1c0936d9a0346dce7d877646046c918de335d69` |
 | `think` | `sergio-sisternes-epam/think` | v0.1.0 | SHA `874613a67018c74ee95f857416fb315d2f80b92b` |
 | `atlas-cartograph` | `sergio-sisternes-epam/atlas-cartograph` | v0.4.1 | SHA `961297c0b88a65473e8922fe14aee937d481c059` |
-| `autogenesis` | `sergio-sisternes-epam/autogenesis` | v0.6.0 | SHA `04e3a83c662fb61b22a9959979185049a25810ea` |
+| `autogenesis` | `sergio-sisternes-epam/autogenesis` | v0.7.0 | SHA `9b8763a362d69faf3eeb99612cd307078c19a881` |
 
 ## Consumer
 
 Atlas v0.11.2 resolves `okf` through this marketplace (`okf@atlas`). Discuss
 v0.3.10 resolves `atlas` through this marketplace (`atlas@atlas`). Autogenesis
-v0.6.0 resolves Atlas, OKF, Discuss, and Think as `pkg@atlas`. Durable
-discussion is catalog `discuss@atlas`. Runtime help, getting-started, and
+v0.7.0 resolves Atlas, OKF, Discuss, and Think as `pkg@atlas`. Durable
+discussion is catalog `discuss@atlas`. Think support nest-loads catalog
+`think@atlas`. Runtime help, getting-started, and
 visualise paths remain unimplemented.
 
 ```bash
