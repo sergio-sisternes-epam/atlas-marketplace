@@ -3,6 +3,8 @@
 This repository is a private **registry only**. Do not vendor package source
 trees here. Upstream packages stay in their own repositories.
 
+Contributions to this repository are licensed under the Apache License 2.0.
+
 ## Pin / registry change
 
 1. Point `marketplace.packages[].ref` at an immutable commit SHA (preferred) or

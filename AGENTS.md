@@ -9,6 +9,7 @@ external packages; it does not vendor skill source trees.
 |------|------|
 | `apm.yml` | Authoritative marketplace catalog (`marketplace.packages`) |
 | `.claude-plugin/marketplace.json` | Generated consumer catalog; do not edit by hand |
+| `LICENSE` | Apache License 2.0 terms for this repository |
 | `.github/workflows/marketplace-ci.yml` | CI adapter: layout validate → `apm pack` (apm-cli 0.30.0) → drift check |
 | `README.md` | Consumer usage and pin table |
 | `CONTRIBUTING.md` | Pin-update and PR procedure |

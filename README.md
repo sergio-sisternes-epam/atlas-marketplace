@@ -67,3 +67,9 @@ user-scope dependencies.
 4. Open PR; wait for CI; human review and merge.
 
 See `CONTRIBUTING.md` for the full procedure.
+
+## License
+
+Copyright 2026 Sergio Sisternes.
+
+Licensed under the [Apache License 2.0](LICENSE).
