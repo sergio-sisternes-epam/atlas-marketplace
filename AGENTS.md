@@ -1,6 +1,6 @@
 # Agent notes for atlas-marketplace
 
-This repository is a **registry-only** private Atlas APM marketplace. It indexes
+This repository is a **registry-only** Atlas APM marketplace. It indexes
 external packages; it does not vendor skill source trees.
 
 ## Source versus generated

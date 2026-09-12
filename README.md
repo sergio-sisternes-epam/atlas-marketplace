@@ -1,6 +1,7 @@
 # atlas-marketplace
 
-Private Atlas APM marketplace **registry only**.
+Public Atlas APM marketplace **registry only**. It indexes external packages;
+it does not vendor package source.
 
 ## Packages
 
@@ -13,7 +14,7 @@ Private Atlas APM marketplace **registry only**.
 | `atlas-cartograph` | `sergio-sisternes-epam/atlas-cartograph` | v0.4.1 | SHA `961297c0b88a65473e8922fe14aee937d481c059` |
 | `autogenesis` | `sergio-sisternes-epam/autogenesis` | v0.6.0 | SHA `04e3a83c662fb61b22a9959979185049a25810ea` |
 
-## Consumer (private)
+## Consumer
 
 Atlas v0.11.2 resolves `okf` through this marketplace (`okf@atlas`). Discuss
 v0.3.10 resolves `atlas` through this marketplace (`atlas@atlas`). Autogenesis
@@ -23,34 +24,25 @@ visualise paths remain unimplemented.
 
 ```bash
 apm marketplace add sergio-sisternes-epam/atlas-marketplace --name atlas
-apm install okf@atlas
-apm install atlas@atlas
-apm install discuss@atlas
-apm install think@atlas
-apm install atlas-cartograph@atlas
-apm install autogenesis@atlas
+apm install <pkg>@atlas
 ```
 
-`apm marketplace add` defaults the local name to the GitHub repo (`atlas-marketplace`).
-Pass `--name atlas` so installs and package deps resolve as `pkg@atlas`. Re-add
-if you previously registered this catalog as `sergio-sisternes-epam`,
-`apm-marketplace`, or `me`.
+`--name atlas` is required. `apm marketplace add` defaults the local name to
+the GitHub repo (`atlas-marketplace`). Pass `--name atlas` so installs and
+package deps resolve as `pkg@atlas`. Re-add if you previously registered this
+catalog as `sergio-sisternes-epam`, `apm-marketplace`, or `me`.
 
-Requires GitHub auth for private repos. Optional `-t` selects a consumer target
-when the project does not already declare one.
+Optional `-t` selects a consumer target when the project does not already
+declare one.
 
-Existing consumers need access to both this private marketplace and the private
-package repository. After a catalog PR merges, explicitly refresh the index and
-update the dependency from the consuming project:
+After a catalog PR merges, consumers must still refresh the index and update
+dependencies from the consuming project. Catalog publication does not
+automatically update installed extensions or user-scope dependencies:
 
 ```bash
 apm marketplace update atlas
-apm update atlas@atlas
-apm update atlas-cartograph@atlas
+apm update <pkg>@atlas
 ```
-
-Catalog publication does not automatically update installed extensions or
-user-scope dependencies.
 
 ## Governance
 
