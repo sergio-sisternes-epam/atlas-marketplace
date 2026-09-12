@@ -1,6 +1,6 @@
 # atlas-marketplace
 
-Public Atlas APM marketplace **registry only**. It indexes Atlas packages and dependencies and makes it available to consumers.
+Public Atlas APM marketplace **registry only**. It indexes external packages and their dependencies; it does not vendor their source.
 
 ## Why
 

@@ -22,7 +22,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Root `README.md` restructured to the catalog family outline (purpose, why,
   catalog table, install, use, related, contributing, license). Ruleset and CI
   internals stay in `CONTRIBUTING.md`.
-- Consumer `README.md` Install documents only the public marketplace path
+- Root `README.md` Install documents only the public marketplace path
   (`apm marketplace add … --name atlas` then `apm install <pkg>@atlas`). Git-tag,
   clone, and post-install CLI setup are not consumer install methods.
 - `autogenesis` pin from v0.6.0 to v0.7.0 (`9b8763a362d69faf3eeb99612cd307078c19a881`). v0.7.0 nest-loads catalog `think@atlas` from think-challenge, think-grill, and think-ramble wrappers instead of vendored think procedure. Existing consumers must refresh the marketplace index and update the dependency; publication does not update installed extensions.
