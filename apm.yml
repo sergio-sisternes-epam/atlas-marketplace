@@ -2,7 +2,7 @@ name: atlas
 version: 0.1.0
 description: Private Atlas APM marketplace (registry only)
 author: sergio-sisternes-epam
-license: MIT
+license: Apache-2.0
 
 marketplace:
   owner:
