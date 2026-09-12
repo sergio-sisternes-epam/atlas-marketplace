@@ -39,4 +39,8 @@ External substantive pull requests need a linked issue first. Maintainer-authore
 
 - [ ] `apm.yml` pin/version updated if this is a catalog change
 - [ ] `apm pack` regenerated `.claude-plugin/marketplace.json` (no hand edits)
+- [ ] Package repo tip matches the pin (SHA/tag)
 - [ ] No skill source trees added to this registry repo
+- [ ] Validate (layout + packages)
+- [ ] Build (pack, no drift)
+- [ ] Publish = merge after review under branch protection

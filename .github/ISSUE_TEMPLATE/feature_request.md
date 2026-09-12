@@ -21,7 +21,7 @@ labels: ["enhancement"]
 
 - [ ] Small docs or maintenance change
 - [ ] User-visible package, skill, or workflow change
-- [ ] I will wait for maintainer approval before opening a PR
+- [ ] I will wait for maintainer approval before opening a PR (external substantive work)
 
 ## Additional context
 
