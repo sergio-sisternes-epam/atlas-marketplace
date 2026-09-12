@@ -25,6 +25,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Consumer `README.md` Install documents only the public marketplace path
   (`apm marketplace add … --name atlas` then `apm install <pkg>@atlas`). Git-tag,
   clone, and post-install CLI setup are not consumer install methods.
+- `autogenesis` pin from v0.6.0 to v0.7.0 (`9b8763a362d69faf3eeb99612cd307078c19a881`). v0.7.0 nest-loads catalog `think@atlas` from think-challenge, think-grill, and think-ramble wrappers instead of vendored think procedure. Existing consumers must refresh the marketplace index and update the dependency; publication does not update installed extensions.
 - Consumer documentation now describes this catalog as a public registry-only marketplace. Register with `apm marketplace add sergio-sisternes-epam/atlas-marketplace --name atlas` and install as `pkg@atlas`. After a catalog merge, consumers must still run `apm marketplace update atlas` and update dependencies; publication does not update installed packages.
 - `autogenesis` pin from v0.4.3 to v0.6.0 (`04e3a83c662fb61b22a9959979185049a25810ea`). v0.6.0 removes the parent-routed Discuss adapter; durable discussion is catalog `discuss@atlas`. Existing consumers must refresh the marketplace index and update the dependency; publication does not update installed extensions.
 - Repository licensing changed from MIT to Apache-2.0.

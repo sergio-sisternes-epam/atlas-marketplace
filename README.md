@@ -16,7 +16,7 @@ it is **not** the source tree for the packages it lists.
 | `discuss` | `sergio-sisternes-epam/discuss` | v0.3.10 | SHA `c1c0936d9a0346dce7d877646046c918de335d69` |
 | `think` | `sergio-sisternes-epam/think` | v0.1.0 | SHA `874613a67018c74ee95f857416fb315d2f80b92b` |
 | `atlas-cartograph` | `sergio-sisternes-epam/atlas-cartograph` | v0.4.1 | SHA `961297c0b88a65473e8922fe14aee937d481c059` |
-| `autogenesis` | `sergio-sisternes-epam/autogenesis` | v0.6.0 | SHA `04e3a83c662fb61b22a9959979185049a25810ea` |
+| `autogenesis` | `sergio-sisternes-epam/autogenesis` | v0.7.0 | SHA `9b8763a362d69faf3eeb99612cd307078c19a881` |
 
 ## Install
 
