@@ -5,6 +5,23 @@ trees here. Upstream packages stay in their own repositories.
 
 Contributions to this repository are licensed under the Apache License 2.0.
 
+## Issues and pull requests
+
+Use the GitHub issue templates in `.github/ISSUE_TEMPLATE/` for bugs and
+feature requests. Report vulnerabilities through a
+[private security advisory](https://github.com/sergio-sisternes-epam/atlas-marketplace/security/advisories/new);
+do not file public issues for them.
+
+External substantive work needs a linked issue first. Maintainer-authored
+small docs or maintenance may skip that wait.
+
+A human must approve the scope before an agent implements the change, except
+for maintainer-authored small docs or maintenance. The pull request author
+owns any agent-generated diffs and must not open the pull request as an
+unattended GitHub author.
+
+Open pull requests with `.github/PULL_REQUEST_TEMPLATE.md`.
+
 ## Pin / registry change
 
 1. Point `marketplace.packages[].ref` at an immutable commit SHA (preferred) or
@@ -35,8 +52,6 @@ new pushes; wait for and assess its feedback before the owner merges. Automatic
 requests do not enforce review completion. Under the owner's single-maintainer
 policy, zero approving reviews are required. Force pushes, deletion, and bypasses
 are blocked. See `docs/branch-protection.md`.
-
-Use `.github/pull_request_template.md` as the PR checklist.
 
 ## Published marketplace name
 

@@ -14,6 +14,8 @@ external packages; it does not vendor skill source trees.
 | `README.md` | Consumer usage and pin table |
 | `CONTRIBUTING.md` | Pin-update and PR procedure |
 | `CHANGELOG.md` | User-visible catalog history (`Unreleased` first) |
+| `.github/ISSUE_TEMPLATE/` | Bug and feature issue templates |
+| `.github/PULL_REQUEST_TEMPLATE.md` | Pull request checklist |
 
 Do not add `SKILL.md` or `.apm/skills/` at the marketplace root.
 
