@@ -3,7 +3,12 @@
 Public Atlas APM marketplace **registry only**. It indexes external packages;
 it does not vendor package source.
 
-## Packages
+## Why
+
+This is the public registry for the Atlas family. It is **not** a skill, and
+it is **not** the source tree for the packages it lists.
+
+## Catalog
 
 | Package | Source | Release | Pin |
 |---------|--------|---------|-----|
@@ -14,52 +19,51 @@ it does not vendor package source.
 | `atlas-cartograph` | `sergio-sisternes-epam/atlas-cartograph` | v0.4.1 | SHA `961297c0b88a65473e8922fe14aee937d481c059` |
 | `autogenesis` | `sergio-sisternes-epam/autogenesis` | v0.6.0 | SHA `04e3a83c662fb61b22a9959979185049a25810ea` |
 
-## Consumer
+## Install
 
-Atlas v0.11.2 resolves `okf` through this marketplace (`okf@atlas`). Discuss
-v0.3.10 resolves `atlas` through this marketplace (`atlas@atlas`). Autogenesis
-v0.6.0 resolves Atlas, OKF, Discuss, and Think as `pkg@atlas`. Durable
-discussion is catalog `discuss@atlas`. Runtime help, getting-started, and
-visualise paths remain unimplemented.
+Register this catalog as `atlas`, then install a package:
 
 ```bash
 apm marketplace add sergio-sisternes-epam/atlas-marketplace --name atlas
-apm install <pkg>@atlas
+apm install okf@atlas
 ```
 
-`--name atlas` is required. `apm marketplace add` defaults the local name to
-the GitHub repo (`atlas-marketplace`). Pass `--name atlas` so installs and
-package deps resolve as `pkg@atlas`. Re-add if you previously registered this
-catalog as `sergio-sisternes-epam`, `apm-marketplace`, or `me`.
+`--name atlas` is required so installs and package deps resolve as `pkg@atlas`.
+Without it, `apm marketplace add` defaults the local name to the GitHub repo
+(`atlas-marketplace`). Re-add if you previously registered this catalog as
+`sergio-sisternes-epam`, `apm-marketplace`, or `me`.
 
-Optional `-t` selects a consumer target when the project does not already
-declare one.
+Public github.com consumers do not need a personal access token.
 
-After a catalog PR merges, consumers must still refresh the index and update
-dependencies from the consuming project. Catalog publication does not
-automatically update installed extensions or user-scope dependencies:
+Other package ids: `atlas@atlas`, `discuss@atlas`, `think@atlas`,
+`atlas-cartograph@atlas`, `autogenesis@atlas`.
+
+After a catalog PR merges, refresh the index and update dependencies from the
+consuming project. Catalog publication does not update installed packages:
 
 ```bash
 apm marketplace update atlas
 apm update <pkg>@atlas
 ```
 
-## Governance
+## Use
 
-- **Pin changes only via pull request** to `main` (no direct pin push).
-- The active **Protect default branch** ruleset requires PRs, up-to-date `validate-and-pack` checks from GitHub Actions, and resolved review conversations. It blocks force pushes and deletion, with no bypass actors.
-- Copilot reviews are requested automatically for non-draft PRs and new pushes. No approving review is required under the owner's single-maintainer policy; automatic review requests are not a review-completion merge gate. See `docs/branch-protection.md`.
-- CI (GitHub Actions adapter): validate registry layout → `apm pack` with `apm-cli==0.30.0` → fail on `marketplace.json` drift.
-- Canonical model lives in the apm skill (`references/ci-cd-canonical.md`); this workflow is an **example adapter**, not the model.
+Add the catalog, then install one package:
 
-## Authoring a pin update
+```bash
+apm marketplace add sergio-sisternes-epam/atlas-marketplace --name atlas
+apm install okf@atlas
+```
 
-1. Point `marketplace.packages[].ref` at the published release commit/tag and keep `version` aligned with the pinned package manifest.
-2. Run `apm pack` with apm-cli 0.30.0 and commit `.claude-plugin/marketplace.json`. `apm marketplace check` is optional: it currently fails for raw commit-SHA pins even when pack and CI succeed.
-3. Keep `AGENTS.md`, `CHANGELOG.md`, `CONTRIBUTING.md`, and `README.md` aligned.
-4. Open PR; wait for CI; human review and merge.
+## Related
 
-See `CONTRIBUTING.md` for the full procedure.
+This repository is **registry only**. Package source, issues, and releases live
+in the repositories listed in the catalog table. Do not vendor those trees here.
+
+## Contributing
+
+Pin changes only via pull request to `main`. See [CONTRIBUTING.md](CONTRIBUTING.md)
+for the pin-update procedure.
 
 ## License
 
