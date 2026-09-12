@@ -6,6 +6,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## Unreleased
 
+### Changed
+
+- `autogenesis` pin from v0.4.3 to v0.6.0 (`04e3a83c662fb61b22a9959979185049a25810ea`). v0.6.0 removes the parent-routed Discuss adapter; durable discussion is catalog `discuss@atlas`. Existing consumers must refresh the marketplace index and update the dependency; publication does not update installed extensions.
+
 ### Added
 
 - GitHub issue and pull request templates for bugs, features, and contribution

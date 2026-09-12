@@ -39,5 +39,5 @@ marketplace:
     - name: autogenesis
       description: Grows a skillset from its own experience store. Core design process is genesis; memory via Atlas. Grok-native APM skill.
       source: sergio-sisternes-epam/autogenesis
-      version: 0.4.3
-      ref: b6d8556e183c78cc0293feaa096e0db3b0cbdc01
+      version: 0.6.0
+      ref: 04e3a83c662fb61b22a9959979185049a25810ea
