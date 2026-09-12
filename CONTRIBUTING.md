@@ -1,6 +1,6 @@
 # Contributing to atlas-marketplace
 
-This repository is a private **registry only**. Do not vendor package source
+This repository is a **registry only**. Do not vendor package source
 trees here. Upstream packages stay in their own repositories.
 
 Contributions to this repository are licensed under the Apache License 2.0.
@@ -34,8 +34,8 @@ Open pull requests with `.github/PULL_REQUEST_TEMPLATE.md`.
    Keep release-scope qualifications in catalog documentation: knowledge/design
    releases must not be described as implemented runtime features.
    The release handoff must also state that existing consumers explicitly
-   refresh the marketplace index and update their dependency with access to
-   both private repositories; publication does not update installed extensions.
+   refresh the marketplace index and update their dependency; publication
+   does not update installed extensions.
 2. Do not edit `.claude-plugin/marketplace.json` by hand.
 3. Use apm-cli 0.30.0 (same pin as CI) and run `apm pack`. `apm marketplace check` is optional: it currently fails for raw commit-SHA pins even when pack and CI succeed.
 
