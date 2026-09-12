@@ -36,7 +36,7 @@ Never modify those upstream repositories from this marketplace.
 Atlas v0.11.2 resolves `okf` through this marketplace (`okf@atlas`).
 Discuss v0.3.10 resolves `atlas` through this marketplace (`atlas@atlas`).
 Atlas-cartograph v0.4.1 resolves `atlas` through this marketplace (`atlas@atlas`).
-Autogenesis v0.4.3 resolves Atlas, OKF, Discuss, and Think through this marketplace (`pkg@atlas`).
+Autogenesis v0.6.0 resolves Atlas, OKF, Discuss, and Think through this marketplace (`pkg@atlas`). Durable discussion is catalog `discuss@atlas`.
 Runtime help, getting-started, and visualise paths remain unimplemented.
 
 ## Published marketplace name

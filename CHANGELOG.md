@@ -6,10 +6,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## Unreleased
 
-### Changed
-
-- `autogenesis` pin from v0.4.3 to v0.6.0 (`04e3a83c662fb61b22a9959979185049a25810ea`). v0.6.0 removes the parent-routed Discuss adapter; durable discussion is catalog `discuss@atlas`. Existing consumers must refresh the marketplace index and update the dependency; publication does not update installed extensions.
-
 ### Added
 
 - GitHub issue and pull request templates for bugs, features, and contribution
@@ -23,6 +19,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Changed
 
+- `autogenesis` pin from v0.4.3 to v0.6.0 (`04e3a83c662fb61b22a9959979185049a25810ea`). v0.6.0 removes the parent-routed Discuss adapter; durable discussion is catalog `discuss@atlas`. Existing consumers must refresh the marketplace index and update the dependency; publication does not update installed extensions.
 - Repository licensing changed from MIT to Apache-2.0.
 - `atlas-cartograph` pin from v0.4.0 to v0.4.1 (`961297c0b88a65473e8922fe14aee937d481c059`), which resolves `atlas` through marketplace `atlas` (`atlas@atlas`).
 - `autogenesis` pin from v0.4.2 to v0.4.3 (`b6d8556e183c78cc0293feaa096e0db3b0cbdc01`), which resolves Atlas, OKF, Discuss, and Think through marketplace `atlas` (`pkg@atlas`).

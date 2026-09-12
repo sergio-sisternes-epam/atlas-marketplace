@@ -17,8 +17,9 @@ Private Atlas APM marketplace **registry only**.
 
 Atlas v0.11.2 resolves `okf` through this marketplace (`okf@atlas`). Discuss
 v0.3.10 resolves `atlas` through this marketplace (`atlas@atlas`). Autogenesis
-v0.4.3 resolves Atlas, OKF, Discuss, and Think as `pkg@atlas`. Runtime
-help, getting-started, and visualise paths remain unimplemented.
+v0.6.0 resolves Atlas, OKF, Discuss, and Think as `pkg@atlas`. Durable
+discussion is catalog `discuss@atlas`. Runtime help, getting-started, and
+visualise paths remain unimplemented.
 
 ```bash
 apm marketplace add sergio-sisternes-epam/atlas-marketplace --name atlas
