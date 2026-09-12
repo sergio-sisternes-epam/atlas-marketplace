@@ -1,17 +1,16 @@
 # atlas-marketplace
 
-Public Atlas APM marketplace **registry only**. It indexes external packages;
-it does not vendor package source.
+Public Atlas APM marketplace **registry only**. It indexes Atlas packages and dependencies and makes it available to consumers.
 
 ## Why
 
 This is the public registry for the Atlas family. It is **not** a skill, and
-it is **not** the source tree for the packages it lists.
+it is **not** the source tree for the packages it lists. 
 
 ## Catalog
 
 | Package | Source | Release | Pin |
-|---------|--------|---------|-----|
+| --- | --- | --- | --- |
 | `okf` | `sergio-sisternes-epam/okf` | v0.2.1 | SHA `5246f7b193b58a32ac8a15fc76aedf37c42b042c` |
 | `atlas` | `sergio-sisternes-epam/atlas` | v0.11.2 | SHA `579e8090273ce991ea0717abed0775dc03f28de2` |
 | `discuss` | `sergio-sisternes-epam/discuss` | v0.3.10 | SHA `c1c0936d9a0346dce7d877646046c918de335d69` |
@@ -21,7 +20,7 @@ it is **not** the source tree for the packages it lists.
 
 ## Install
 
-Register this catalog as `atlas`, then install a package:
+Add the catalog once, then install packages from it:
 
 ```bash
 apm marketplace add sergio-sisternes-epam/atlas-marketplace --name atlas
@@ -31,20 +30,10 @@ apm install okf@atlas
 `--name atlas` is required so installs and package deps resolve as `pkg@atlas`.
 Without it, `apm marketplace add` defaults the local name to the GitHub repo
 (`atlas-marketplace`). Re-add if you previously registered this catalog as
-`sergio-sisternes-epam`, `apm-marketplace`, or `me`.
+`sergio-sisternes-epam`, `apm-marketplace`, or `me`. 
 
-Public github.com consumers do not need a personal access token.
-
-Other package ids: `atlas@atlas`, `discuss@atlas`, `think@atlas`,
+Other packages: `atlas@atlas`, `discuss@atlas`, `think@atlas`,
 `atlas-cartograph@atlas`, `autogenesis@atlas`.
-
-After a catalog PR merges, refresh the index and update dependencies from the
-consuming project. Catalog publication does not update installed packages:
-
-```bash
-apm marketplace update atlas
-apm update <pkg>@atlas
-```
 
 ## Use
 
