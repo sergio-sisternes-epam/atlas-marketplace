@@ -25,7 +25,7 @@ Pins are immutable commit SHAs for the latest verified stable GitHub release of
 each external package:
 
 - `okf` → `sergio-sisternes-epam/okf` @ `5246f7b193b58a32ac8a15fc76aedf37c42b042c` (v0.2.1)
-- `atlas` → `sergio-sisternes-epam/atlas` @ `579e8090273ce991ea0717abed0775dc03f28de2` (v0.11.2)
+- `atlas` → `sergio-sisternes-epam/atlas` @ `40e11c65e243236850c26fc6cd5a04acdd483eb4` (v0.12.0)
 - `discuss` → `sergio-sisternes-epam/discuss` @ `c1c0936d9a0346dce7d877646046c918de335d69` (v0.3.10)
 - `think` → `sergio-sisternes-epam/think` @ `874613a67018c74ee95f857416fb315d2f80b92b` (v0.1.0)
 - `atlas-cartograph` → `sergio-sisternes-epam/atlas-cartograph` @ `961297c0b88a65473e8922fe14aee937d481c059` (v0.4.1)
@@ -33,11 +33,11 @@ each external package:
 
 Never modify those upstream repositories from this marketplace.
 
-Atlas v0.11.2 resolves `okf` through this marketplace (`okf@atlas`).
+Atlas v0.12.0 resolves `okf` through this marketplace (`okf@atlas`). It ships
+runtime **help** and **getting-started** modules. Visualise remains unimplemented.
 Discuss v0.3.10 resolves `atlas` through this marketplace (`atlas@atlas`).
 Atlas-cartograph v0.4.1 resolves `atlas` through this marketplace (`atlas@atlas`).
 Autogenesis v0.7.0 resolves Atlas, OKF, Discuss, and Think through this marketplace (`pkg@atlas`). Durable discussion is catalog `discuss@atlas`. Think support nest-loads catalog `think@atlas`.
-Runtime help, getting-started, and visualise paths remain unimplemented.
 
 ## Published marketplace name
 
