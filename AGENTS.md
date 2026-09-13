@@ -26,7 +26,7 @@ each external package:
 
 - `okf` → `sergio-sisternes-epam/okf` @ `5246f7b193b58a32ac8a15fc76aedf37c42b042c` (v0.2.1)
 - `atlas` → `sergio-sisternes-epam/atlas` @ `40e11c65e243236850c26fc6cd5a04acdd483eb4` (v0.12.0)
-- `discuss` → `sergio-sisternes-epam/discuss` @ `c1c0936d9a0346dce7d877646046c918de335d69` (v0.3.10)
+- `discuss` → `sergio-sisternes-epam/discuss` @ `af2d2fa4759c00d4ae77115c0fe710c439f8c958` (v0.4.0)
 - `think` → `sergio-sisternes-epam/think` @ `874613a67018c74ee95f857416fb315d2f80b92b` (v0.1.0)
 - `atlas-cartograph` → `sergio-sisternes-epam/atlas-cartograph` @ `961297c0b88a65473e8922fe14aee937d481c059` (v0.4.1)
 - `autogenesis` → `sergio-sisternes-epam/autogenesis` @ `9b8763a362d69faf3eeb99612cd307078c19a881` (v0.7.0)
@@ -35,7 +35,7 @@ Never modify those upstream repositories from this marketplace.
 
 Atlas v0.12.0 resolves `okf` through this marketplace (`okf@atlas`). It ships
 runtime **help** and **getting-started** modules. Visualise remains unimplemented.
-Discuss v0.3.10 resolves `atlas` through this marketplace (`atlas@atlas`).
+Discuss v0.4.0 resolves `atlas` through this marketplace (`atlas@atlas`). It ships runtime **help** and **getting-started** modules.
 Atlas-cartograph v0.4.1 resolves `atlas` through this marketplace (`atlas@atlas`).
 Autogenesis v0.7.0 resolves Atlas, OKF, Discuss, and Think through this marketplace (`pkg@atlas`). Durable discussion is catalog `discuss@atlas`. Think support nest-loads catalog `think@atlas`.
 
