@@ -19,6 +19,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Changed
 
+- Catalog table in `README.md` now links each package source to its GitHub repository main page. Pins, versions, and marketplace visibility are unchanged.
 - Canonical first consumer install example is now `apm install atlas@atlas` instead of `okf@atlas`. Pins, versions, and marketplace visibility are unchanged.
 - Marketplace catalog description from private to public registry-only wording (`Public Atlas APM marketplace (registry only). It indexes external packages and their dependencies; it does not vendor their source.`). Catalog package descriptions now match each package README lede. Pins, versions, and the consumer install path are unchanged: `apm marketplace add sergio-sisternes-epam/atlas-marketplace --name atlas`.
 - `atlas-cartograph` pin from v0.4.1 to v0.4.2 (`9dcb9347f0c66d20a9607d2adc0474b69dd004f6`), which ships Apache-2.0 LICENSE on the pinned tree. Install remains `atlas-cartograph@atlas`. Existing consumers must refresh the marketplace index and update the dependency; publication does not update installed extensions.
