@@ -45,9 +45,10 @@ Catalog `name` is `atlas`. Consumers must register with:
 
 ```bash
 apm marketplace add sergio-sisternes-epam/atlas-marketplace --name atlas
+apm install atlas@atlas
 ```
 
-Package deps and installs use `pkg@atlas`. Do not use the GitHub-repo default
+Canonical first consumer install is `atlas@atlas`. Package deps and installs use `pkg@atlas`. Do not use the GitHub-repo default
 `atlas-marketplace` or a previous local alias such as `sergio-sisternes-epam`,
 `apm-marketplace`, or `me`.
 

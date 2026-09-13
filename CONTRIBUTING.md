@@ -59,8 +59,11 @@ Catalog `name` is `atlas`. Document consumer registration as:
 
 ```bash
 apm marketplace add sergio-sisternes-epam/atlas-marketplace --name atlas
-apm install <pkg>@atlas
+apm install atlas@atlas
 ```
+
+Canonical first consumer install is `atlas@atlas`. Other packages install as
+`<pkg>@atlas`.
 
 `--name atlas` is required because `apm marketplace add` defaults to the GitHub
 repo name (`atlas-marketplace`).
