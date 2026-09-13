@@ -1,6 +1,6 @@
 name: atlas
 version: 0.1.0
-description: Public Atlas APM marketplace (registry only)
+description: "Public Atlas APM marketplace (registry only). It indexes external packages and their dependencies; it does not vendor their source."
 author: sergio-sisternes-epam
 license: Apache-2.0
 
@@ -12,32 +12,32 @@ marketplace:
     - claude
   packages:
     - name: okf
-      description: Open Knowledge Format — pure format standard and validator (Grok-native skill)
+      description: "Open Knowledge Format — an APM package that distributes the pure OKF format standard and validator."
       source: sergio-sisternes-epam/okf
       version: 0.2.1
       ref: 5246f7b193b58a32ac8a15fc76aedf37c42b042c
     - name: atlas
-      description: Durable OKF v0.2 knowledge substrate for process memory, schema governance, project knowledge graphs, and canonical CI gates on Atlas mounts
+      description: "Atlas is a distributed Semantic Knowledge Network built with technologies LLMs already know: git and markdown, with a SCHEMA and a CLI that keep agents inside pre-defined, extensible domains."
       source: sergio-sisternes-epam/atlas
       version: 0.12.0
       ref: 40e11c65e243236850c26fc6cd5a04acdd483eb4
     - name: discuss
-      description: Run a durable discussion about a clear subject as an agent-maintained Atlas graph. Persist, prune, and test forming ideas. Not for implementation.
+      description: "Run a discussion as a durable, agent-maintained Atlas graph. Fill the gaps in your thinking with this companion skill that explores the graph for you, finds where they are, and proposes solutions."
       source: sergio-sisternes-epam/discuss
       version: 0.4.0
       ref: af2d2fa4759c00d4ae77115c0fe710c439f8c958
     - name: think
-      description: think-ramble, think-grill, and think-challenge thinking primitives. Conversation-only when no durable store is present.
+      description: "One install gives nine agent harnesses three ways to think: capture ideas, interrogate assumptions, and challenge claims with sources."
       source: sergio-sisternes-epam/think
       version: 0.1.0
       ref: 874613a67018c74ee95f857416fb315d2f80b92b
     - name: atlas-cartograph
-      description: Live Atlas knowledge-graph canvas for GitHub Copilot App
+      description: "Cartograph is an Atlas knowledge-graph viewer for the GitHub Copilot App."
       source: sergio-sisternes-epam/atlas-cartograph
       version: 0.4.2
       ref: 9dcb9347f0c66d20a9607d2adc0474b69dd004f6
     - name: autogenesis
-      description: Grows a skillset from its own experience store. Core design process is genesis; memory via Atlas. Grok-native APM skill.
+      description: "Autogenesis is an expanded discipline of danielmeppiel/genesis that uses Atlas as long-term memory for the skill, wherever it is used, pairs with skills such as discuss and think and incorporates minor new patterns and disciplines, such as Activation Cards, Modules, or a skill-native SOLID design lens."
       source: sergio-sisternes-epam/autogenesis
       version: 0.7.0
       ref: 9b8763a362d69faf3eeb99612cd307078c19a881
