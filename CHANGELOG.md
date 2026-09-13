@@ -19,6 +19,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Changed
 
+- `AGENTS.md` catalog pins and runtime-path notes now match the Atlas v0.12.0 pin: help and getting-started are shipped; visualise remains unimplemented.
 - `atlas` pin from v0.11.2 to v0.12.0 (`40e11c65e243236850c26fc6cd5a04acdd483eb4`), which ships runtime **help** and **getting-started** modules. Existing consumers must refresh the marketplace index and update the dependency; publication does not update installed extensions.
 - Root `README.md` restructured to the catalog family outline (purpose, why,
   catalog table, install, use, related, contributing, license). Ruleset and CI
