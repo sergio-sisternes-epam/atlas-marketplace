@@ -34,8 +34,8 @@ marketplace:
     - name: atlas-cartograph
       description: Live Atlas knowledge-graph canvas for GitHub Copilot App
       source: sergio-sisternes-epam/atlas-cartograph
-      version: 0.4.1
-      ref: 961297c0b88a65473e8922fe14aee937d481c059
+      version: 0.4.2
+      ref: 9dcb9347f0c66d20a9607d2adc0474b69dd004f6
     - name: autogenesis
       description: Grows a skillset from its own experience store. Core design process is genesis; memory via Atlas. Grok-native APM skill.
       source: sergio-sisternes-epam/autogenesis
