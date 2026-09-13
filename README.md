@@ -24,7 +24,7 @@ Add the catalog once, then install packages from it:
 
 ```bash
 apm marketplace add sergio-sisternes-epam/atlas-marketplace --name atlas
-apm install okf@atlas
+apm install atlas@atlas
 ```
 
 `--name atlas` is required so installs and package deps resolve as `pkg@atlas`.
@@ -32,7 +32,7 @@ Without it, `apm marketplace add` defaults the local name to the GitHub repo
 (`atlas-marketplace`). Re-add if you previously registered this catalog as
 `sergio-sisternes-epam`, `apm-marketplace`, or `me`. 
 
-Other packages: `atlas@atlas`, `discuss@atlas`, `think@atlas`,
+Other packages: `okf@atlas`, `discuss@atlas`, `think@atlas`,
 `atlas-cartograph@atlas`, `autogenesis@atlas`.
 
 ## Use
@@ -41,7 +41,7 @@ Add the catalog, then install one package:
 
 ```bash
 apm marketplace add sergio-sisternes-epam/atlas-marketplace --name atlas
-apm install okf@atlas
+apm install atlas@atlas
 ```
 
 ## Related
