@@ -1,7 +1,7 @@
 # Contributing to atlas-marketplace
 
-This repository is a **registry only**. Do not vendor package source
-trees here. Upstream packages stay in their own repositories.
+This repository is a **public**, **registry only** marketplace. Do not vendor
+package source trees here. Upstream packages stay in their own repositories.
 
 Contributions to this repository are licensed under the Apache License 2.0.
 

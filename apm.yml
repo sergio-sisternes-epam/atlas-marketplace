@@ -1,6 +1,6 @@
 name: atlas
 version: 0.1.0
-description: Private Atlas APM marketplace (registry only)
+description: Public Atlas APM marketplace (registry only)
 author: sergio-sisternes-epam
 license: Apache-2.0
 
