@@ -6,6 +6,17 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## Unreleased
 
+### Fixed
+
+- Catalog `ref` pins from raw commit SHAs to cloneable release tags so Copilot
+  plugin install (`git clone --branch <ref>`) succeeds. Package versions and
+  peeled commits are unchanged: `okf` `v0.2.1`, `atlas` `v0.12.0`, `discuss`
+  `v0.4.0`, `think` `v0.1.0`, `atlas-cartograph` `v0.4.2`, `autogenesis`
+  `v0.7.0`. Generated `sha` values are the GitHub objects `apm pack` writes
+  for those tags (annotated tag objects except lightweight
+  `atlas-cartograph`). Existing consumers must refresh the marketplace index;
+  publication does not update installed extensions.
+
 ### Added
 
 - GitHub issue and pull request templates for bugs, features, and contribution
