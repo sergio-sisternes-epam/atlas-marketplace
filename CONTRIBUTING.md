@@ -31,10 +31,12 @@ Open pull requests with `.github/PULL_REQUEST_TEMPLATE.md`.
    pin fails to clone. Record the matching package name, source
    (`owner/repo`), and `version`. Verify the tag exists and peels to the
    expected commit, and that the package manifest at that commit declares
-   the same version, before updating the catalog. Immutability stays in the
-   generated `sha` after `apm pack`. Include the source release URL, tag,
-   and peeled commit SHA in the pull request so reviewers can verify the
-   pin's provenance.
+   the same version, before updating the catalog. After `apm pack`, generated
+   `sha` is the GitHub object for `ref` (an annotated tag object ID when the
+   tag is annotated). Do not replace that with `ref^{}` by hand; the pack
+   drift check regenerates `.claude-plugin/marketplace.json`. Include the
+   source release URL, tag, and peeled commit SHA in the pull request so
+   reviewers can verify the pin's provenance.
    Keep release-scope qualifications in catalog documentation: knowledge/design
    releases must not be described as implemented runtime features.
    The release handoff must also state that existing consumers explicitly

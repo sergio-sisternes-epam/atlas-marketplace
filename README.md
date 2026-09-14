@@ -18,6 +18,10 @@ it is **not** the source tree for the packages it lists.
 | [`atlas-cartograph`](https://github.com/sergio-sisternes-epam/atlas-cartograph) | [sergio-sisternes-epam/atlas-cartograph](https://github.com/sergio-sisternes-epam/atlas-cartograph) | v0.4.2 | tag `v0.4.2` (SHA `9dcb9347f0c66d20a9607d2adc0474b69dd004f6`) |
 | [`autogenesis`](https://github.com/sergio-sisternes-epam/autogenesis) | [sergio-sisternes-epam/autogenesis](https://github.com/sergio-sisternes-epam/autogenesis) | v0.7.0 | tag `v0.7.0` (SHA `9b8763a362d69faf3eeb99612cd307078c19a881`) |
 
+Pin column SHAs are peeled commits (`tag^{}`). After `apm pack`, generated
+`sha` is the GitHub object for the tag (annotated tag object when the tag is
+annotated).
+
 ## Install
 
 Add the catalog once, then install packages from it:

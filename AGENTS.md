@@ -22,9 +22,14 @@ Do not add `SKILL.md` or `.apm/skills/` at the marketplace root.
 ## Current catalog pins
 
 Pins are cloneable release tags (`v{version}`) for the latest verified stable
-GitHub release of each external package. Immutability is the generated `sha`
-after `apm pack`. Do not set `ref` to a raw commit SHA: Copilot and
-`git clone --branch` cannot fetch a SHA.
+GitHub release of each external package. Do not set `ref` to a raw commit SHA:
+Copilot and `git clone --branch` cannot fetch a SHA.
+
+After `apm pack` (apm-cli 0.30.0), generated `sha` is the GitHub object for
+that tag: an annotated tag object ID when the tag is annotated, or the commit
+when the tag is lightweight. Do not hand-edit `.claude-plugin/marketplace.json`
+to substitute `ref^{}` — the pack drift check regenerates it. Parenthetical
+values below are peeled commits (`tag^{}`) for provenance.
 
 - `okf` → `sergio-sisternes-epam/okf` @ `v0.2.1` (`5246f7b193b58a32ac8a15fc76aedf37c42b042c`)
 - `atlas` → `sergio-sisternes-epam/atlas` @ `v0.12.0` (`40e11c65e243236850c26fc6cd5a04acdd483eb4`)
