@@ -16,7 +16,7 @@ it is **not** the source tree for the packages it lists.
 | [`discuss`](https://github.com/sergio-sisternes-epam/discuss) | [sergio-sisternes-epam/discuss](https://github.com/sergio-sisternes-epam/discuss) | v0.4.0 | tag `v0.4.0` (SHA `af2d2fa4759c00d4ae77115c0fe710c439f8c958`) |
 | [`think`](https://github.com/sergio-sisternes-epam/think) | [sergio-sisternes-epam/think](https://github.com/sergio-sisternes-epam/think) | v0.1.0 | tag `v0.1.0` (SHA `874613a67018c74ee95f857416fb315d2f80b92b`) |
 | [`atlas-cartograph`](https://github.com/sergio-sisternes-epam/atlas-cartograph) | [sergio-sisternes-epam/atlas-cartograph](https://github.com/sergio-sisternes-epam/atlas-cartograph) | v0.4.2 | tag `v0.4.2` (SHA `9dcb9347f0c66d20a9607d2adc0474b69dd004f6`) |
-| [`autogenesis`](https://github.com/sergio-sisternes-epam/autogenesis) | [sergio-sisternes-epam/autogenesis](https://github.com/sergio-sisternes-epam/autogenesis) | v0.7.0 | tag `v0.7.0` (SHA `9b8763a362d69faf3eeb99612cd307078c19a881`) |
+| [`autogenesis`](https://github.com/sergio-sisternes-epam/autogenesis) | [sergio-sisternes-epam/autogenesis](https://github.com/sergio-sisternes-epam/autogenesis) | v0.8.0 | tag `v0.8.0` (SHA `0765ea4dc4d4769f120239c795a3055093c971f5`) |
 
 Pin column SHAs are peeled commits (`tag^{}`). After `apm pack`, generated
 `sha` is the GitHub object for the tag (annotated tag object when the tag is

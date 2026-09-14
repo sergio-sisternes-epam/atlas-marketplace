@@ -12,7 +12,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   plugin install (`git clone --branch <ref>`) succeeds. Package versions and
   peeled commits are unchanged: `okf` `v0.2.1`, `atlas` `v0.12.0`, `discuss`
   `v0.4.0`, `think` `v0.1.0`, `atlas-cartograph` `v0.4.2`, `autogenesis`
-  `v0.7.0`. Generated `sha` values are the GitHub objects `apm pack` writes
+  `v0.8.0`. Generated `sha` values are the GitHub objects `apm pack` writes
   for those tags (annotated tag objects except lightweight
   `atlas-cartograph`). Existing consumers must refresh the marketplace index;
   publication does not update installed extensions.
@@ -30,6 +30,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Changed
 
+- `autogenesis` pin from v0.7.0 to v0.8.0 (`0765ea4dc4d4769f120239c795a3055093c971f5`), which ships parent-routed **help** and **getting-started** operations. Install remains `autogenesis@atlas`. Existing consumers must refresh the marketplace index and update the dependency; publication does not update installed extensions.
 - Catalog table in `README.md` now links each package source to its GitHub repository main page. Pins, versions, and marketplace visibility are unchanged.
 - Canonical first consumer install example is now `apm install atlas@atlas` instead of `okf@atlas`. Pins, versions, and marketplace visibility are unchanged.
 - Marketplace catalog description from private to public registry-only wording (`Public Atlas APM marketplace (registry only). It indexes external packages and their dependencies; it does not vendor their source.`). Catalog package descriptions now match each package README lede. Pins, versions, and the consumer install path are unchanged: `apm marketplace add sergio-sisternes-epam/atlas-marketplace --name atlas`.
