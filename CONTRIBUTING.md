@@ -24,20 +24,24 @@ Open pull requests with `.github/PULL_REQUEST_TEMPLATE.md`.
 
 ## Pin / registry change
 
-1. Point `marketplace.packages[].ref` at an immutable commit SHA (preferred) or
-   a repository-supported release tag. Record the matching package name,
-   source (`owner/repo`), and `version` when the release version is known.
-   Verify the published release tag resolves to the pinned commit and its
-   package manifest declares the same version before updating the catalog.
-   Include the source release URL and resolved commit SHA in the pull request
-   so reviewers can verify the pin's provenance.
+1. Point `marketplace.packages[].ref` at a cloneable published release tag
+   that matches `version` (Atlas tag pattern `v{version}`, for example atlas
+   0.12.0 → `v0.12.0`). Do not set `ref` to a raw commit SHA. Copilot plugin
+   install and `git clone --branch` only accept a branch or tag, so a SHA
+   pin fails to clone. Record the matching package name, source
+   (`owner/repo`), and `version`. Verify the tag exists and peels to the
+   expected commit, and that the package manifest at that commit declares
+   the same version, before updating the catalog. Immutability stays in the
+   generated `sha` after `apm pack`. Include the source release URL, tag,
+   and peeled commit SHA in the pull request so reviewers can verify the
+   pin's provenance.
    Keep release-scope qualifications in catalog documentation: knowledge/design
    releases must not be described as implemented runtime features.
    The release handoff must also state that existing consumers explicitly
    refresh the marketplace index and update their dependency; publication
    does not update installed extensions.
 2. Do not edit `.claude-plugin/marketplace.json` by hand.
-3. Use apm-cli 0.30.0 (same pin as CI) and run `apm pack`. `apm marketplace check` is optional: it currently fails for raw commit-SHA pins even when pack and CI succeed.
+3. Use apm-cli 0.30.0 (same pin as CI) and run `apm pack`. `apm marketplace check` is optional after pack.
 
 4. Commit `apm.yml` together with the generated `.claude-plugin/marketplace.json`.
 5. Review `AGENTS.md`, `CHANGELOG.md` (`Unreleased`), `CONTRIBUTING.md`, and

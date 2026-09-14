@@ -21,15 +21,17 @@ Do not add `SKILL.md` or `.apm/skills/` at the marketplace root.
 
 ## Current catalog pins
 
-Pins are immutable commit SHAs for the latest verified stable GitHub release of
-each external package:
+Pins are cloneable release tags (`v{version}`) for the latest verified stable
+GitHub release of each external package. Immutability is the generated `sha`
+after `apm pack`. Do not set `ref` to a raw commit SHA: Copilot and
+`git clone --branch` cannot fetch a SHA.
 
-- `okf` → `sergio-sisternes-epam/okf` @ `5246f7b193b58a32ac8a15fc76aedf37c42b042c` (v0.2.1)
-- `atlas` → `sergio-sisternes-epam/atlas` @ `40e11c65e243236850c26fc6cd5a04acdd483eb4` (v0.12.0)
-- `discuss` → `sergio-sisternes-epam/discuss` @ `af2d2fa4759c00d4ae77115c0fe710c439f8c958` (v0.4.0)
-- `think` → `sergio-sisternes-epam/think` @ `874613a67018c74ee95f857416fb315d2f80b92b` (v0.1.0)
-- `atlas-cartograph` → `sergio-sisternes-epam/atlas-cartograph` @ `9dcb9347f0c66d20a9607d2adc0474b69dd004f6` (v0.4.2)
-- `autogenesis` → `sergio-sisternes-epam/autogenesis` @ `9b8763a362d69faf3eeb99612cd307078c19a881` (v0.7.0)
+- `okf` → `sergio-sisternes-epam/okf` @ `v0.2.1` (`5246f7b193b58a32ac8a15fc76aedf37c42b042c`)
+- `atlas` → `sergio-sisternes-epam/atlas` @ `v0.12.0` (`40e11c65e243236850c26fc6cd5a04acdd483eb4`)
+- `discuss` → `sergio-sisternes-epam/discuss` @ `v0.4.0` (`af2d2fa4759c00d4ae77115c0fe710c439f8c958`)
+- `think` → `sergio-sisternes-epam/think` @ `v0.1.0` (`874613a67018c74ee95f857416fb315d2f80b92b`)
+- `atlas-cartograph` → `sergio-sisternes-epam/atlas-cartograph` @ `v0.4.2` (`9dcb9347f0c66d20a9607d2adc0474b69dd004f6`)
+- `autogenesis` → `sergio-sisternes-epam/autogenesis` @ `v0.7.0` (`9b8763a362d69faf3eeb99612cd307078c19a881`)
 
 Never modify those upstream repositories from this marketplace.
 
@@ -58,8 +60,8 @@ then re-pin here. Do not edit those repos from this marketplace worktree.
 
 ## Catalog change procedure
 
-1. Change only `marketplace.packages[]` in `apm.yml` (name, source, version, immutable `ref`, description). Keep `version` aligned with the package manifest at the pinned release commit.
-2. Run `apm pack` with apm-cli 0.30.0 (same pin as CI). `apm marketplace check` is optional: it currently fails for raw commit-SHA pins even when pack and CI succeed.
+1. Change only `marketplace.packages[]` in `apm.yml` (name, source, version, cloneable release-tag `ref`, description). Keep `version` aligned with the package manifest at the pinned release. `ref` must be a tag `git clone --branch` can fetch (Atlas pattern `v{version}`). Verify the tag peels to the expected commit before changing. Immutability is the generated `sha` in `.claude-plugin/marketplace.json`.
+2. Run `apm pack` with apm-cli 0.30.0 (same pin as CI). `apm marketplace check` is optional after pack.
 3. Commit the matching `.claude-plugin/marketplace.json`.
 4. Keep `AGENTS.md`, `CHANGELOG.md`, `CONTRIBUTING.md`, and `README.md` aligned.
 5. Open a pull request; publish is merge to `main` after review and CI.
