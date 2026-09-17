@@ -35,7 +35,7 @@ values below are peeled commits (`tag^{}`) for provenance.
 - `atlas` → `sergio-sisternes-epam/atlas` @ `v0.12.0` (`40e11c65e243236850c26fc6cd5a04acdd483eb4`)
 - `discuss` → `sergio-sisternes-epam/discuss` @ `v0.4.0` (`af2d2fa4759c00d4ae77115c0fe710c439f8c958`)
 - `think` → `sergio-sisternes-epam/think` @ `v0.1.0` (`874613a67018c74ee95f857416fb315d2f80b92b`)
-- `atlas-cartograph` → `sergio-sisternes-epam/atlas-cartograph` @ `v0.4.2` (`9dcb9347f0c66d20a9607d2adc0474b69dd004f6`)
+- `atlas-cartograph` → `sergio-sisternes-epam/atlas-cartograph` @ `v0.4.3` (`4470256eca4379af8715773a80d6664843b524a2`)
 - `autogenesis` → `sergio-sisternes-epam/autogenesis` @ `v0.8.0` (`0765ea4dc4d4769f120239c795a3055093c971f5`)
 
 Never modify those upstream repositories from this marketplace.
@@ -43,7 +43,7 @@ Never modify those upstream repositories from this marketplace.
 Atlas v0.12.0 resolves `okf` through this marketplace (`okf@atlas`). It ships
 runtime **help** and **getting-started** modules. Visualise remains unimplemented.
 Discuss v0.4.0 resolves `atlas` through this marketplace (`atlas@atlas`). It ships runtime **help** and **getting-started** modules.
-Atlas-cartograph v0.4.2 resolves `atlas` through this marketplace (`atlas@atlas`). It ships Apache-2.0 LICENSE on the pinned tree.
+Atlas-cartograph v0.4.3 resolves `atlas` through this marketplace (`atlas@atlas`). It ships Apache-2.0 LICENSE on the pinned tree and idle rotation speed control.
 Autogenesis v0.8.0 resolves Atlas, OKF, Discuss, and Think through this marketplace (`pkg@atlas`). Durable discussion is catalog `discuss@atlas`. Think support nest-loads catalog `think@atlas`. It ships parent-routed **help** and **getting-started** operations.
 
 ## Published marketplace name
