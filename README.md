@@ -15,7 +15,7 @@ it is **not** the source tree for the packages it lists.
 | [`atlas`](https://github.com/sergio-sisternes-epam/atlas) | [sergio-sisternes-epam/atlas](https://github.com/sergio-sisternes-epam/atlas) | v0.12.0 | tag `v0.12.0` (SHA `40e11c65e243236850c26fc6cd5a04acdd483eb4`) |
 | [`discuss`](https://github.com/sergio-sisternes-epam/discuss) | [sergio-sisternes-epam/discuss](https://github.com/sergio-sisternes-epam/discuss) | v0.4.0 | tag `v0.4.0` (SHA `af2d2fa4759c00d4ae77115c0fe710c439f8c958`) |
 | [`think`](https://github.com/sergio-sisternes-epam/think) | [sergio-sisternes-epam/think](https://github.com/sergio-sisternes-epam/think) | v0.1.0 | tag `v0.1.0` (SHA `874613a67018c74ee95f857416fb315d2f80b92b`) |
-| [`atlas-cartograph`](https://github.com/sergio-sisternes-epam/atlas-cartograph) | [sergio-sisternes-epam/atlas-cartograph](https://github.com/sergio-sisternes-epam/atlas-cartograph) | v0.4.2 | tag `v0.4.2` (SHA `9dcb9347f0c66d20a9607d2adc0474b69dd004f6`) |
+| [`atlas-cartograph`](https://github.com/sergio-sisternes-epam/atlas-cartograph) | [sergio-sisternes-epam/atlas-cartograph](https://github.com/sergio-sisternes-epam/atlas-cartograph) | v0.4.3 | tag `v0.4.3` (SHA `4470256eca4379af8715773a80d6664843b524a2`) |
 | [`autogenesis`](https://github.com/sergio-sisternes-epam/autogenesis) | [sergio-sisternes-epam/autogenesis](https://github.com/sergio-sisternes-epam/autogenesis) | v0.8.0 | tag `v0.8.0` (SHA `0765ea4dc4d4769f120239c795a3055093c971f5`) |
 
 Pin column SHAs are peeled commits (`tag^{}`). After `apm pack`, generated

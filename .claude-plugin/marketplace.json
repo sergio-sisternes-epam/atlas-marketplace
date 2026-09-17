@@ -56,12 +56,12 @@
     {
       "name": "atlas-cartograph",
       "description": "Cartograph is an Atlas knowledge-graph viewer for the GitHub Copilot App.",
-      "version": "0.4.2",
+      "version": "0.4.3",
       "source": {
         "source": "github",
         "repo": "sergio-sisternes-epam/atlas-cartograph",
-        "ref": "v0.4.2",
-        "sha": "9dcb9347f0c66d20a9607d2adc0474b69dd004f6",
+        "ref": "v0.4.3",
+        "sha": "4470256eca4379af8715773a80d6664843b524a2",
         "tag_pattern": "v{version}"
       }
     },
