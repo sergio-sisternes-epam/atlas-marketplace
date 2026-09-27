@@ -32,12 +32,12 @@
     {
       "name": "discuss",
       "description": "Run a discussion as a durable, agent-maintained Atlas graph. Fill the gaps in your thinking with this companion skill that explores the graph for you, finds where they are, and proposes solutions.",
-      "version": "0.4.0",
+      "version": "0.5.0",
       "source": {
         "source": "github",
         "repo": "sergio-sisternes-epam/discuss",
-        "ref": "v0.4.0",
-        "sha": "cef0cbe182e64fcc722fce39d28bb5d681aedf10",
+        "ref": "v0.5.0",
+        "sha": "ed5b822304a6309c935be996dcd1071f6ab7ec20",
         "tag_pattern": "v{version}"
       }
     },
