@@ -8,6 +8,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Changed
 
+- `autogenesis` pin from v0.8.0 to v0.8.1 (`f901d0df2ac04a4641b78b1c7f2100185725a4b1`), which refreshes Discuss to catalog `v0.5.0`, drops `APM_READ_TOKEN` from Autogenesis CI now that Atlas-family sources are public, and aligns the APM package description with the README purpose lede. Install remains `autogenesis@atlas`. Existing consumers must refresh the marketplace index and update the dependency; publication does not update installed extensions.
 - `discuss` pin from v0.4.0 to v0.5.0 (`480fc5fc9f0b1c280cd2301dccbf76ff63ddbc4e`), which stores live discussion in the confirmed Atlas of the active project. `discuss-atlas` stays that package repository's own Atlas. Install remains `discuss@atlas`. Existing consumers must refresh the marketplace index and update the dependency; publication does not update installed extensions.
 - `atlas-cartograph` pin from v0.4.2 to v0.4.3 (`4470256eca4379af8715773a80d6664843b524a2`), which ships idle rotation speed control. Install remains `atlas-cartograph@atlas`. Existing consumers must refresh the marketplace index and update the dependency; publication does not update installed extensions.
 

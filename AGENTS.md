@@ -36,7 +36,7 @@ values below are peeled commits (`tag^{}`) for provenance.
 - `discuss` → `sergio-sisternes-epam/discuss` @ `v0.5.0` (`480fc5fc9f0b1c280cd2301dccbf76ff63ddbc4e`)
 - `think` → `sergio-sisternes-epam/think` @ `v0.1.0` (`874613a67018c74ee95f857416fb315d2f80b92b`)
 - `atlas-cartograph` → `sergio-sisternes-epam/atlas-cartograph` @ `v0.4.3` (`4470256eca4379af8715773a80d6664843b524a2`)
-- `autogenesis` → `sergio-sisternes-epam/autogenesis` @ `v0.8.0` (`0765ea4dc4d4769f120239c795a3055093c971f5`)
+- `autogenesis` → `sergio-sisternes-epam/autogenesis` @ `v0.8.1` (`f901d0df2ac04a4641b78b1c7f2100185725a4b1`)
 
 Never modify those upstream repositories from this marketplace.
 
@@ -44,7 +44,7 @@ Atlas v0.12.0 resolves `okf` through this marketplace (`okf@atlas`). It ships
 runtime **help** and **getting-started** modules. Visualise remains unimplemented.
 Discuss v0.5.0 resolves `atlas` through this marketplace (`atlas@atlas`). It stores live discussion in the confirmed Atlas of the active project. `discuss-atlas` stays that package repository's own Atlas. It still ships runtime **help** and **getting-started** modules.
 Atlas-cartograph v0.4.3 resolves `atlas` through this marketplace (`atlas@atlas`). It ships Apache-2.0 LICENSE on the pinned tree and idle rotation speed control.
-Autogenesis v0.8.0 resolves Atlas, OKF, Discuss, and Think through this marketplace (`pkg@atlas`). Durable discussion is catalog `discuss@atlas`. Think support nest-loads catalog `think@atlas`. It ships parent-routed **help** and **getting-started** operations.
+Autogenesis v0.8.1 resolves Atlas, OKF, Discuss, and Think through this marketplace (`pkg@atlas`). Durable discussion is catalog `discuss@atlas` at Discuss `v0.5.0`. Think support nest-loads catalog `think@atlas`. It ships parent-routed **help** and **getting-started** operations. CI no longer requires `APM_READ_TOKEN` for public Atlas-family sources.
 
 ## Published marketplace name
 
