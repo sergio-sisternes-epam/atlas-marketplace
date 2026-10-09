@@ -12,7 +12,7 @@ it is **not** the source tree for the packages it lists.
 | Package | Source | Release | Pin |
 | --- | --- | --- | --- |
 | [`okf`](https://github.com/sergio-sisternes-epam/okf) | [sergio-sisternes-epam/okf](https://github.com/sergio-sisternes-epam/okf) | v0.2.1 | tag `v0.2.1` (SHA `5246f7b193b58a32ac8a15fc76aedf37c42b042c`) |
-| [`atlas`](https://github.com/sergio-sisternes-epam/atlas) | [sergio-sisternes-epam/atlas](https://github.com/sergio-sisternes-epam/atlas) | v0.12.0 | tag `v0.12.0` (SHA `40e11c65e243236850c26fc6cd5a04acdd483eb4`) |
+| [`atlas`](https://github.com/sergio-sisternes-epam/atlas) | [sergio-sisternes-epam/atlas](https://github.com/sergio-sisternes-epam/atlas) | v0.13.0 | tag `v0.13.0` (SHA `b0b101243ffae8f6da16ab4d139057b4f29a01a5`) |
 | [`discuss`](https://github.com/sergio-sisternes-epam/discuss) | [sergio-sisternes-epam/discuss](https://github.com/sergio-sisternes-epam/discuss) | v0.5.0 | tag `v0.5.0` (SHA `480fc5fc9f0b1c280cd2301dccbf76ff63ddbc4e`) |
 | [`think`](https://github.com/sergio-sisternes-epam/think) | [sergio-sisternes-epam/think](https://github.com/sergio-sisternes-epam/think) | v0.1.0 | tag `v0.1.0` (SHA `874613a67018c74ee95f857416fb315d2f80b92b`) |
 | [`atlas-cartograph`](https://github.com/sergio-sisternes-epam/atlas-cartograph) | [sergio-sisternes-epam/atlas-cartograph](https://github.com/sergio-sisternes-epam/atlas-cartograph) | v0.4.3 | tag `v0.4.3` (SHA `4470256eca4379af8715773a80d6664843b524a2`) |
