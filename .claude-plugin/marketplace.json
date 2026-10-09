@@ -76,6 +76,30 @@
         "sha": "a0180abcda1a7b68a8ff489679707bb62dc8c7c6",
         "tag_pattern": "v{version}"
       }
+    },
+    {
+      "name": "atlas-tasks",
+      "description": "Distributed Atlas task discipline for agents that already use Atlas: per-Atlas task lists, colocated task bodies, and core Atlas task pages as pointers.",
+      "version": "0.6.1",
+      "source": {
+        "source": "github",
+        "repo": "sergio-sisternes-epam/atlas-tasks",
+        "ref": "v0.6.1",
+        "sha": "fb3eaa274b32543b81b3498dd1c67876c8292332",
+        "tag_pattern": "v{version}"
+      }
+    },
+    {
+      "name": "atlas-people",
+      "description": "Operator-owned people Atlas skill: query and remember people and typed relationships on a dedicated store, with a supervised one-shot Apple Notes import.",
+      "version": "0.1.2",
+      "source": {
+        "source": "github",
+        "repo": "sergio-sisternes-epam/atlas-people",
+        "ref": "v0.1.2",
+        "sha": "d2a925de47b2f68307ce42c5b0b961de0ea66b25",
+        "tag_pattern": "v{version}"
+      }
     }
   ]
 }
