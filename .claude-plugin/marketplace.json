@@ -20,12 +20,12 @@
     {
       "name": "atlas",
       "description": "Atlas is a distributed Semantic Knowledge Network built with technologies LLMs already know: git and markdown, with a SCHEMA and a CLI that keep agents inside pre-defined, extensible domains.",
-      "version": "0.12.0",
+      "version": "0.13.0",
       "source": {
         "source": "github",
         "repo": "sergio-sisternes-epam/atlas",
-        "ref": "v0.12.0",
-        "sha": "d25c14a068b5c5b46488b2d4a14fdbff1ed17682",
+        "ref": "v0.13.0",
+        "sha": "ea967cb9e746277babdd77da68e0ce071ff58a8a",
         "tag_pattern": "v{version}"
       }
     },
