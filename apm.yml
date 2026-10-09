@@ -41,3 +41,13 @@ marketplace:
       source: sergio-sisternes-epam/autogenesis
       version: 0.8.1
       ref: v0.8.1
+    - name: atlas-tasks
+      description: "Distributed Atlas task discipline for agents that already use Atlas: per-Atlas task lists, colocated task bodies, and core Atlas task pages as pointers."
+      source: sergio-sisternes-epam/atlas-tasks
+      version: 0.6.1
+      ref: v0.6.1
+    - name: atlas-people
+      description: "Operator-owned people Atlas skill: query and remember people and typed relationships on a dedicated store, with a supervised one-shot Apple Notes import."
+      source: sergio-sisternes-epam/atlas-people
+      version: 0.1.2
+      ref: v0.1.2

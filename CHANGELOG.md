@@ -26,6 +26,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Added
 
+- `atlas-tasks` catalog entry at v0.6.1 (`26c56a823d93d6eed762de8bafcf89f2a732ed08`): distributed Atlas task discipline (task lists, colocated task bodies, core `task` pages as pointers). Needs Atlas 0.12.0 or later; mount the overlay with `atlas schema install`. At v0.6.1 the overlay installs on SCHEMA 1.0 stores only. Install as `atlas-tasks@atlas`.
+- `atlas-people` catalog entry at v0.1.2 (`605ee9a7c20d3c68af37cb410ca43be67475574c`): people Atlas skill (query and remember people and typed relationships on an operator-supplied store; one-shot Apple Notes import). Composes with an installed `atlas`; declares no APM dependencies. Install as `atlas-people@atlas`.
 - GitHub issue and pull request templates for bugs, features, and contribution
   checks.
 - Catalog entries for Atlas-ecosystem packages pinned to latest stable release commits:
