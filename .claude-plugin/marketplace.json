@@ -20,12 +20,12 @@
     {
       "name": "atlas",
       "description": "Atlas is a distributed Semantic Knowledge Network built with technologies LLMs already know: git and markdown, with a SCHEMA and a CLI that keep agents inside pre-defined, extensible domains.",
-      "version": "0.13.0",
+      "version": "0.13.1",
       "source": {
         "source": "github",
         "repo": "sergio-sisternes-epam/atlas",
-        "ref": "v0.13.0",
-        "sha": "ea967cb9e746277babdd77da68e0ce071ff58a8a",
+        "ref": "v0.13.1",
+        "sha": "81ce2c38565c7f000db9d149d1f28f7d233c0fc7",
         "tag_pattern": "v{version}"
       }
     },
@@ -80,12 +80,12 @@
     {
       "name": "atlas-tasks",
       "description": "Distributed Atlas task discipline for agents that already use Atlas: per-Atlas task lists, colocated task bodies, and core Atlas task pages as pointers.",
-      "version": "0.6.1",
+      "version": "0.6.2",
       "source": {
         "source": "github",
         "repo": "sergio-sisternes-epam/atlas-tasks",
-        "ref": "v0.6.1",
-        "sha": "fb3eaa274b32543b81b3498dd1c67876c8292332",
+        "ref": "v0.6.2",
+        "sha": "1a72fe5b6e56046fea3b0e6c9b2d57fe6efa402a",
         "tag_pattern": "v{version}"
       }
     },
