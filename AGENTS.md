@@ -32,7 +32,7 @@ to substitute `ref^{}` — the pack drift check regenerates it. Parenthetical
 values below are peeled commits (`tag^{}`) for provenance.
 
 - `okf` → `sergio-sisternes-epam/okf` @ `v0.2.1` (`5246f7b193b58a32ac8a15fc76aedf37c42b042c`)
-- `atlas` → `sergio-sisternes-epam/atlas` @ `v0.13.0` (`b0b101243ffae8f6da16ab4d139057b4f29a01a5`)
+- `atlas` → `sergio-sisternes-epam/atlas` @ `v0.13.1` (`b012e92ef10aaaee451e99253ea2968066521ec7`)
 - `discuss` → `sergio-sisternes-epam/discuss` @ `v0.5.0` (`480fc5fc9f0b1c280cd2301dccbf76ff63ddbc4e`)
 - `think` → `sergio-sisternes-epam/think` @ `v0.1.0` (`874613a67018c74ee95f857416fb315d2f80b92b`)
 - `atlas-cartograph` → `sergio-sisternes-epam/atlas-cartograph` @ `v0.4.3` (`4470256eca4379af8715773a80d6664843b524a2`)
@@ -42,14 +42,16 @@ values below are peeled commits (`tag^{}`) for provenance.
 
 Never modify those upstream repositories from this marketplace.
 
-Atlas v0.13.0 resolves `okf` through this marketplace (`okf@atlas`). It ships
+Atlas v0.13.1 resolves `okf` through this marketplace (`okf@atlas`). It ships
 runtime **help** and **getting-started** modules, the four-layer memory model,
-and `memory-migrate`. Visualise remains unimplemented. There is no dedicated
+and `memory-migrate`. On contract envelope 2.0 stores an overlay may carry one
+package-metadata extension slot, and `schema upgrade --to 2.0` checks installed
+overlays before applying. Visualise remains unimplemented. There is no dedicated
 sleep or consolidate command.
 Discuss v0.5.0 resolves `atlas` through this marketplace (`atlas@atlas`). It stores live discussion in the confirmed Atlas of the active project. `discuss-atlas` stays that package repository's own Atlas. It still ships runtime **help** and **getting-started** modules.
 Atlas-cartograph v0.4.3 resolves `atlas` through this marketplace (`atlas@atlas`). It ships Apache-2.0 LICENSE on the pinned tree and idle rotation speed control.
 Autogenesis v0.8.1 resolves Atlas, OKF, Discuss, and Think through this marketplace (`pkg@atlas`). Durable discussion is catalog `discuss@atlas` at Discuss `v0.5.0`. Think support nest-loads catalog `think@atlas`. It ships parent-routed **help** and **getting-started** operations. CI no longer requires `APM_READ_TOKEN` for public Atlas-family sources.
-Atlas-tasks v0.6.1 requires an installed Atlas (Atlas 0.12.0 or later) and a target Atlas the user names; it does not declare `atlas@atlas` as an APM dependency. It mounts its overlay onto that Atlas with `atlas schema install <atlas-tasks-package>/contributions/atlas-tasks --root <atlas-root>` and then `atlas compile`. At v0.6.1 the overlay installs on SCHEMA 1.0 stores only; SCHEMA 2.0 stores reject it (`'atlas_tasks' was unexpected`).
+Atlas-tasks v0.6.1 requires an installed Atlas (Atlas 0.12.0 or later) and a target Atlas the user names; it does not declare `atlas@atlas` as an APM dependency. It mounts its overlay onto that Atlas with `atlas schema install <atlas-tasks-package>/contributions/atlas-tasks --root <atlas-root>` and then `atlas compile`. At v0.6.1 the overlay installs on SCHEMA 1.0 stores. On contract envelope 2.0 stores it needs Atlas 0.13.1 or later, which accepts the overlay package-metadata extension slot; earlier Atlas releases reject it (`'atlas_tasks' was unexpected`).
 Atlas-people v0.1.2 runs on an operator-supplied people Atlas (store id and push remote come from the install config; the package ships placeholders only) and writes only with `atlas_target: confirmed`. It composes with an installed `atlas` plus an Atlas compile/commit/push helper and, for the one-shot import, an Apple Notes reader skill; it declares no APM dependencies, and those two helpers are not in this catalog.
 
 ## Published marketplace name
