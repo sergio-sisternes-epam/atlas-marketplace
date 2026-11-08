@@ -36,7 +36,7 @@ values below are peeled commits (`tag^{}`) for provenance.
 - `discuss` → `sergio-sisternes-epam/discuss` @ `v0.5.0` (`480fc5fc9f0b1c280cd2301dccbf76ff63ddbc4e`)
 - `think` → `sergio-sisternes-epam/think` @ `v0.1.0` (`874613a67018c74ee95f857416fb315d2f80b92b`)
 - `atlas-cartograph` → `sergio-sisternes-epam/atlas-cartograph` @ `v0.4.3` (`4470256eca4379af8715773a80d6664843b524a2`)
-- `autogenesis` → `sergio-sisternes-epam/autogenesis` @ `v0.8.1` (`f901d0df2ac04a4641b78b1c7f2100185725a4b1`)
+- `autogenesis` → `sergio-sisternes-epam/autogenesis` @ `v0.9.0` (`5dbf95e88da31f24848ca3352e0f83525f2c6719`)
 - `atlas-tasks` → `sergio-sisternes-epam/atlas-tasks` @ `v0.7.0` (`8d8e1db954ec75cc379f8c575d49d8cd3d9f3388`)
 - `atlas-people` → `sergio-sisternes-epam/atlas-people` @ `v0.1.2` (`605ee9a7c20d3c68af37cb410ca43be67475574c`)
 
@@ -50,7 +50,7 @@ overlays before applying. Visualise remains unimplemented. There is no dedicated
 sleep or consolidate command.
 Discuss v0.5.0 resolves `atlas` through this marketplace (`atlas@atlas`). It stores live discussion in the confirmed Atlas of the active project. `discuss-atlas` stays that package repository's own Atlas. It still ships runtime **help** and **getting-started** modules.
 Atlas-cartograph v0.4.3 resolves `atlas` through this marketplace (`atlas@atlas`). It ships Apache-2.0 LICENSE on the pinned tree and idle rotation speed control.
-Autogenesis v0.8.1 resolves Atlas, OKF, Discuss, and Think through this marketplace (`pkg@atlas`). Durable discussion is catalog `discuss@atlas` at Discuss `v0.5.0`. Think support nest-loads catalog `think@atlas`. It ships parent-routed **help** and **getting-started** operations. CI no longer requires `APM_READ_TOKEN` for public Atlas-family sources.
+Autogenesis v0.9.0 requires Atlas v0.13.0 or later. Its `behavioural_contract` accepts `waza` or `deferred:<reason>`; the removed `specify` value is rejected without an alias.
 Atlas-tasks v0.7.0 requires an installed Atlas (Atlas 0.12.0 or later) and a target Atlas the user names; it does not declare `atlas@atlas` as an APM dependency. It mounts its overlay onto that Atlas with `atlas schema install <atlas-tasks-package>/contributions/atlas-tasks --root <atlas-root>` and then `atlas compile`. Since v0.6.2 the overlay carries only Atlas contract keys, so it installs on SCHEMA 1.0 and 2.0 stores. v0.7.0 writes a generated `index.md` in each task-list folder so Atlas compile's `index_md_present` stays green, and ships `scripts/list-folder-index.py` (dry run, idempotent) to backfill existing stores.
 Atlas-people v0.1.2 runs on an operator-supplied people Atlas (store id and push remote come from the install config; the package ships placeholders only) and writes only with `atlas_target: confirmed`. It composes with an installed `atlas` plus an Atlas compile/commit/push helper and, for the one-shot import, an Apple Notes reader skill; it declares no APM dependencies, and those two helpers are not in this catalog.
 
