@@ -62,6 +62,9 @@ jobs:
               assert p.get("ref") or p.get("version"), f"{p.get('name')}: need ref or version"
           print(f"ok: {len(pkgs)} package(s)")
           PY
+      - name: Register checked-out marketplace for validation
+        run: apm marketplace add "$GITHUB_WORKSPACE" --name atlas
+
       - name: Validate marketplace schema
         run: apm marketplace validate atlas
 
