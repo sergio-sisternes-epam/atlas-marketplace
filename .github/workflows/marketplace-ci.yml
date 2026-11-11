@@ -63,7 +63,7 @@ jobs:
           print(f"ok: {len(pkgs)} package(s)")
           PY
       - name: Register checked-out marketplace for validation
-        run: apm marketplace add "$GITHUB_WORKSPACE" --name atlas
+        run: apm marketplace add "$GITHUB_WORKSPACE" --name atlas --ref "$GITHUB_SHA"
 
       - name: Validate marketplace schema
         run: apm marketplace validate atlas
