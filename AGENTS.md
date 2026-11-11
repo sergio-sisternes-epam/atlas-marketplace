@@ -37,7 +37,7 @@ drift check regenerates it. Values in parentheses below are peeled commits
 - `atlas-cartograph` → `sergio-sisternes-epam/atlas-cartograph` @ `v0.4.3` (`4470256eca4379af8715773a80d6664843b524a2`)
 - `autogenesis` → `sergio-sisternes-epam/autogenesis` @ `v0.9.0` (`5dbf95e88da31f24848ca3352e0f83525f2c6719`)
 - `atlas-tasks` → `sergio-sisternes-epam/atlas-tasks` @ `v0.7.0` (`8d8e1db954ec75cc379f8c575d49d8cd3d9f3388`)
-- `atlas-people` → `sergio-sisternes-epam/atlas-people` @ `v0.1.2` (`605ee9a7c20d3c68af37cb410ca43be67475574c`)
+- `atlas-people` → `sergio-sisternes-epam/atlas-people` @ `v0.1.3` (`c4e85ae8a21b4cef7358359c0e7859873d2bbe7e`)
 
 Never modify those upstream repositories from this marketplace.
 
@@ -51,7 +51,7 @@ Discuss v0.5.0 resolves `atlas` through this marketplace (`atlas@atlas`). It sto
 Atlas-cartograph v0.4.3 resolves `atlas` through this marketplace (`atlas@atlas`). It ships Apache-2.0 LICENSE on the pinned tree and idle rotation speed control.
 Autogenesis v0.9.0 requires Atlas v0.13.0 or later. Its `behavioural_contract` accepts `waza` or `deferred:<reason>`; the removed `specify` value is rejected without an alias.
 Atlas-tasks v0.7.0 requires an installed Atlas (Atlas 0.12.0 or later) and a target Atlas the user names; it does not declare `atlas@atlas` as an APM dependency. It mounts its overlay onto that Atlas with `atlas schema install <atlas-tasks-package>/contributions/atlas-tasks --root <atlas-root>` and then `atlas compile`. Since v0.6.2 the overlay carries only Atlas contract keys, so it installs on SCHEMA 1.0 and 2.0 stores. v0.7.0 writes a generated `index.md` in each task-list folder so Atlas compile's `index_md_present` stays green, and ships `scripts/list-folder-index.py` (dry run, idempotent) to backfill existing stores.
-Atlas-people v0.1.2 runs on an operator-supplied people Atlas (store id and push remote come from the install config; the package ships placeholders only) and writes only with `atlas_target: confirmed`. It composes with an installed `atlas` plus an Atlas compile/commit/push helper and, for the one-shot import, an Apple Notes reader skill; it declares no APM dependencies, and those two helpers are not in this catalog.
+Atlas-people v0.1.3 runs on an operator-supplied people Atlas (store id and push remote come from the install config; the package ships placeholders only) and writes only with `atlas_target: confirmed`. It composes with an installed `atlas` plus an Atlas compile/commit/push helper and, for the one-shot import, an Apple Notes reader skill; it declares no APM dependencies, and those two helpers are not in this catalog.
 
 ## Published marketplace name
 
