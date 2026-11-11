@@ -10,7 +10,7 @@ indexes external packages; it does not vendor skill source trees.
 | `apm.yml` | Authoritative marketplace catalog (`marketplace.packages`) |
 | `.claude-plugin/marketplace.json` | Generated consumer catalog; do not edit by hand |
 | `LICENSE` | Apache License 2.0 terms for this repository |
-| `.github/workflows/marketplace-ci.yml` | CI adapter: layout validate → `apm pack` (apm-cli 0.30.0) → drift check |
+| `.github/workflows/marketplace-ci.yml` | CI adapter: layout/schema validate → `apm pack` (apm-cli 0.35.0) → read-only and Git drift checks |
 | `README.md` | Consumer README: purpose, catalog pins, install/use |
 | `CONTRIBUTING.md` | Pin-update and PR procedure |
 | `CHANGELOG.md` | User-visible catalog history (`Unreleased` first) |
@@ -25,11 +25,10 @@ Pins are cloneable release tags (`v{version}`) for the latest verified stable
 GitHub release of each external package. Do not set `ref` to a raw commit SHA:
 Copilot and `git clone --branch` cannot fetch a SHA.
 
-After `apm pack` (apm-cli 0.30.0), generated `sha` is the GitHub object for
-that tag: an annotated tag object ID when the tag is annotated, or the commit
-when the tag is lightweight. Do not hand-edit `.claude-plugin/marketplace.json`
-to substitute `ref^{}` — the pack drift check regenerates it. Parenthetical
-values below are peeled commits (`tag^{}`) for provenance.
+After `apm pack` (apm-cli 0.35.0), generated `sha` is the peeled commit for
+the release tag. Do not hand-edit `.claude-plugin/marketplace.json`; the pack
+drift check regenerates it. Values in parentheses below are peeled commits
+(`tag^{}`) for provenance.
 
 - `okf` → `sergio-sisternes-epam/okf` @ `v0.2.1` (`5246f7b193b58a32ac8a15fc76aedf37c42b042c`)
 - `atlas` → `sergio-sisternes-epam/atlas` @ `v0.13.1` (`b012e92ef10aaaee451e99253ea2968066521ec7`)
@@ -74,7 +73,10 @@ then re-pin here. Do not edit those repos from this marketplace worktree.
 ## Catalog change procedure
 
 1. Change only `marketplace.packages[]` in `apm.yml` (name, source, version, cloneable release-tag `ref`, description). Keep `version` aligned with the package manifest at the pinned release. `ref` must be a tag `git clone --branch` can fetch (Atlas pattern `v{version}`). Verify the tag peels to the expected commit before changing. Immutability is the generated `sha` in `.claude-plugin/marketplace.json`.
-2. Run `apm pack` with apm-cli 0.30.0 (same pin as CI). `apm marketplace check` is optional after pack.
+2. With apm-cli 0.35.0 (same pin as CI), run
+   `apm marketplace validate atlas`, `apm pack --strict-metadata
+   --check-versions`, and `apm pack --check-clean --check-versions`.
+   The last command is a read-only drift check; CI also checks Git drift.
 3. Commit the matching `.claude-plugin/marketplace.json`.
 4. Keep `AGENTS.md`, `CHANGELOG.md`, `CONTRIBUTING.md`, and `README.md` aligned.
 5. Open a pull request; publish is merge to `main` after review and CI.

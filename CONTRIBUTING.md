@@ -31,19 +31,22 @@ Open pull requests with `.github/PULL_REQUEST_TEMPLATE.md`.
    pin fails to clone. Record the matching package name, source
    (`owner/repo`), and `version`. Verify the tag exists and peels to the
    expected commit, and that the package manifest at that commit declares
-   the same version, before updating the catalog. After `apm pack`, generated
-   `sha` is the GitHub object for `ref` (an annotated tag object ID when the
-   tag is annotated). Do not replace that with `ref^{}` by hand; the pack
-   drift check regenerates `.claude-plugin/marketplace.json`. Include the
-   source release URL, tag, and peeled commit SHA in the pull request so
-   reviewers can verify the pin's provenance.
+   the same version, before updating the catalog. With apm-cli 0.35.0,
+   generated `sha` is the peeled commit SHA. Do not edit that generated value
+   by hand; the pack drift check regenerates `.claude-plugin/marketplace.json`.
+   Include the source release URL, tag, and peeled commit SHA in the pull
+   request so reviewers can verify the pin's provenance.
    Keep release-scope qualifications in catalog documentation: knowledge/design
    releases must not be described as implemented runtime features.
    The release handoff must also state that existing consumers explicitly
    refresh the marketplace index and update their dependency; publication
    does not update installed extensions.
 2. Do not edit `.claude-plugin/marketplace.json` by hand.
-3. Use apm-cli 0.30.0 (same pin as CI) and run `apm pack`. `apm marketplace check` is optional after pack.
+3. Use apm-cli 0.35.0 (same pin as CI). Run
+   `apm marketplace validate atlas`, then
+   `apm pack --strict-metadata --check-versions` to generate the catalog, and
+   `apm pack --check-clean --check-versions` to verify it without writing.
+   The CI `git diff --exit-code` remains an additional drift gate.
 
 4. Commit `apm.yml` together with the generated `.claude-plugin/marketplace.json`.
 5. Review `AGENTS.md`, `CHANGELOG.md` (`Unreleased`), `CONTRIBUTING.md`, and

@@ -20,9 +20,9 @@ it is **not** the source tree for the packages it lists.
 | [`atlas-tasks`](https://github.com/sergio-sisternes-epam/atlas-tasks) | [sergio-sisternes-epam/atlas-tasks](https://github.com/sergio-sisternes-epam/atlas-tasks) | v0.7.0 | tag `v0.7.0` (SHA `8d8e1db954ec75cc379f8c575d49d8cd3d9f3388`) |
 | [`atlas-people`](https://github.com/sergio-sisternes-epam/atlas-people) | [sergio-sisternes-epam/atlas-people](https://github.com/sergio-sisternes-epam/atlas-people) | v0.1.2 | tag `v0.1.2` (SHA `605ee9a7c20d3c68af37cb410ca43be67475574c`) |
 
-Pin column SHAs are peeled commits (`tag^{}`). After `apm pack`, generated
-`sha` is the GitHub object for the tag (annotated tag object when the tag is
-annotated).
+Pin column SHAs are peeled commits (`tag^{}`). APM 0.35.0 generates the same
+peeled commit SHA in each catalog entry; do not hand-edit generated `sha`
+values.
 
 ## Install
 

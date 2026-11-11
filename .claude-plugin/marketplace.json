@@ -13,7 +13,7 @@
         "source": "github",
         "repo": "sergio-sisternes-epam/okf",
         "ref": "v0.2.1",
-        "sha": "cb6ae7e7ad4e113bcb5df1b59186236e798cdd31",
+        "sha": "5246f7b193b58a32ac8a15fc76aedf37c42b042c",
         "tag_pattern": "v{version}"
       }
     },
@@ -25,7 +25,7 @@
         "source": "github",
         "repo": "sergio-sisternes-epam/atlas",
         "ref": "v0.13.1",
-        "sha": "81ce2c38565c7f000db9d149d1f28f7d233c0fc7",
+        "sha": "b012e92ef10aaaee451e99253ea2968066521ec7",
         "tag_pattern": "v{version}"
       }
     },
@@ -37,7 +37,7 @@
         "source": "github",
         "repo": "sergio-sisternes-epam/discuss",
         "ref": "v0.5.0",
-        "sha": "ed5b822304a6309c935be996dcd1071f6ab7ec20",
+        "sha": "480fc5fc9f0b1c280cd2301dccbf76ff63ddbc4e",
         "tag_pattern": "v{version}"
       }
     },
@@ -49,7 +49,7 @@
         "source": "github",
         "repo": "sergio-sisternes-epam/think",
         "ref": "v0.1.0",
-        "sha": "99587bcf2d5fe093967cc26b4ca459b2e45783a9",
+        "sha": "874613a67018c74ee95f857416fb315d2f80b92b",
         "tag_pattern": "v{version}"
       }
     },
@@ -73,7 +73,7 @@
         "source": "github",
         "repo": "sergio-sisternes-epam/autogenesis",
         "ref": "v0.9.0",
-        "sha": "c28f320e2023f681d341fa21059976ff4dc4c9c5",
+        "sha": "5dbf95e88da31f24848ca3352e0f83525f2c6719",
         "tag_pattern": "v{version}"
       }
     },
@@ -85,7 +85,7 @@
         "source": "github",
         "repo": "sergio-sisternes-epam/atlas-tasks",
         "ref": "v0.7.0",
-        "sha": "23c5383ea9b0cfd8f477c1d3dd71540682788029",
+        "sha": "8d8e1db954ec75cc379f8c575d49d8cd3d9f3388",
         "tag_pattern": "v{version}"
       }
     },
@@ -97,7 +97,7 @@
         "source": "github",
         "repo": "sergio-sisternes-epam/atlas-people",
         "ref": "v0.1.2",
-        "sha": "d2a925de47b2f68307ce42c5b0b961de0ea66b25",
+        "sha": "605ee9a7c20d3c68af37cb410ca43be67475574c",
         "tag_pattern": "v{version}"
       }
     }
