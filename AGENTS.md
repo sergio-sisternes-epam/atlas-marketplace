@@ -10,7 +10,7 @@ indexes external packages; it does not vendor skill source trees.
 | `apm.yml` | Authoritative marketplace catalog (`marketplace.packages`) |
 | `.claude-plugin/marketplace.json` | Generated consumer catalog; do not edit by hand |
 | `LICENSE` | Apache License 2.0 terms for this repository |
-| `.github/workflows/marketplace-ci.yml` | CI adapter: layout validate → `apm pack` (apm-cli 0.30.0) → drift check |
+| `.github/workflows/marketplace-ci.yml` | CI adapter: layout/schema validate → `apm pack` (apm-cli 0.35.0) → read-only and Git drift checks |
 | `README.md` | Consumer README: purpose, catalog pins, install/use |
 | `CONTRIBUTING.md` | Pin-update and PR procedure |
 | `CHANGELOG.md` | User-visible catalog history (`Unreleased` first) |
@@ -25,11 +25,10 @@ Pins are cloneable release tags (`v{version}`) for the latest verified stable
 GitHub release of each external package. Do not set `ref` to a raw commit SHA:
 Copilot and `git clone --branch` cannot fetch a SHA.
 
-After `apm pack` (apm-cli 0.30.0), generated `sha` is the GitHub object for
-that tag: an annotated tag object ID when the tag is annotated, or the commit
-when the tag is lightweight. Do not hand-edit `.claude-plugin/marketplace.json`
-to substitute `ref^{}` — the pack drift check regenerates it. Parenthetical
-values below are peeled commits (`tag^{}`) for provenance.
+After `apm pack` (apm-cli 0.35.0), generated `sha` is the peeled commit for
+the release tag. Do not hand-edit `.claude-plugin/marketplace.json`; the pack
+drift check regenerates it. Values in parentheses below are peeled commits
+(`tag^{}`) for provenance.
 
 - `okf` → `sergio-sisternes-epam/okf` @ `v0.2.1` (`5246f7b193b58a32ac8a15fc76aedf37c42b042c`)
 - `atlas` → `sergio-sisternes-epam/atlas` @ `v0.13.1` (`b012e92ef10aaaee451e99253ea2968066521ec7`)
@@ -38,7 +37,7 @@ values below are peeled commits (`tag^{}`) for provenance.
 - `atlas-cartograph` → `sergio-sisternes-epam/atlas-cartograph` @ `v0.4.3` (`4470256eca4379af8715773a80d6664843b524a2`)
 - `autogenesis` → `sergio-sisternes-epam/autogenesis` @ `v0.9.0` (`5dbf95e88da31f24848ca3352e0f83525f2c6719`)
 - `atlas-tasks` → `sergio-sisternes-epam/atlas-tasks` @ `v0.7.0` (`8d8e1db954ec75cc379f8c575d49d8cd3d9f3388`)
-- `atlas-people` → `sergio-sisternes-epam/atlas-people` @ `v0.1.2` (`605ee9a7c20d3c68af37cb410ca43be67475574c`)
+- `atlas-people` → `sergio-sisternes-epam/atlas-people` @ `v0.1.3` (`c4e85ae8a21b4cef7358359c0e7859873d2bbe7e`)
 
 Never modify those upstream repositories from this marketplace.
 
@@ -52,7 +51,7 @@ Discuss v0.5.0 resolves `atlas` through this marketplace (`atlas@atlas`). It sto
 Atlas-cartograph v0.4.3 resolves `atlas` through this marketplace (`atlas@atlas`). It ships Apache-2.0 LICENSE on the pinned tree and idle rotation speed control.
 Autogenesis v0.9.0 requires Atlas v0.13.0 or later. Its `behavioural_contract` accepts `waza` or `deferred:<reason>`; the removed `specify` value is rejected without an alias.
 Atlas-tasks v0.7.0 requires an installed Atlas (Atlas 0.12.0 or later) and a target Atlas the user names; it does not declare `atlas@atlas` as an APM dependency. It mounts its overlay onto that Atlas with `atlas schema install <atlas-tasks-package>/contributions/atlas-tasks --root <atlas-root>` and then `atlas compile`. Since v0.6.2 the overlay carries only Atlas contract keys, so it installs on SCHEMA 1.0 and 2.0 stores. v0.7.0 writes a generated `index.md` in each task-list folder so Atlas compile's `index_md_present` stays green, and ships `scripts/list-folder-index.py` (dry run, idempotent) to backfill existing stores.
-Atlas-people v0.1.2 runs on an operator-supplied people Atlas (store id and push remote come from the install config; the package ships placeholders only) and writes only with `atlas_target: confirmed`. It composes with an installed `atlas` plus an Atlas compile/commit/push helper and, for the one-shot import, an Apple Notes reader skill; it declares no APM dependencies, and those two helpers are not in this catalog.
+Atlas-people v0.1.3 ships placeholders only and lets the operator choose any Atlas; install-config values are suggested defaults, not confirmation. Before a write, the operator must confirm the specific target and push remote for that run (`atlas_target: confirmed`); a changed target needs confirmation again. Visibility notes for shared, work/project, or public targets are advisory, but public or unknown-visibility targets also require a separate explicit public-visibility acknowledgement before the overlay mount and first write. It composes with an installed `atlas` plus an Atlas compile/commit/push helper and, for the one-shot import, an Apple Notes reader skill; it declares no APM dependencies, and those two helpers are not in this catalog.
 
 ## Published marketplace name
 
@@ -74,7 +73,10 @@ then re-pin here. Do not edit those repos from this marketplace worktree.
 ## Catalog change procedure
 
 1. Change only `marketplace.packages[]` in `apm.yml` (name, source, version, cloneable release-tag `ref`, description). Keep `version` aligned with the package manifest at the pinned release. `ref` must be a tag `git clone --branch` can fetch (Atlas pattern `v{version}`). Verify the tag peels to the expected commit before changing. Immutability is the generated `sha` in `.claude-plugin/marketplace.json`.
-2. Run `apm pack` with apm-cli 0.30.0 (same pin as CI). `apm marketplace check` is optional after pack.
+2. With apm-cli 0.35.0 (same pin as CI), run
+   `apm marketplace validate atlas`, `apm pack --strict-metadata
+   --check-versions`, and `apm pack --check-clean --check-versions`.
+   The last command is a read-only drift check; CI also checks Git drift.
 3. Commit the matching `.claude-plugin/marketplace.json`.
 4. Keep `AGENTS.md`, `CHANGELOG.md`, `CONTRIBUTING.md`, and `README.md` aligned.
 5. Open a pull request; publish is merge to `main` after review and CI.

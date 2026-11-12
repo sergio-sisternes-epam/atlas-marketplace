@@ -28,7 +28,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           # Pin for reproducibility; bump deliberately
-          pip install "apm-cli==0.30.0"
+          pip install "apm-cli==0.35.0"
 
       - name: Validate registry layout
         run: |
@@ -62,9 +62,17 @@ jobs:
               assert p.get("ref") or p.get("version"), f"{p.get('name')}: need ref or version"
           print(f"ok: {len(pkgs)} package(s)")
           PY
+      - name: Register checked-out marketplace for validation
+        run: apm marketplace add "$GITHUB_WORKSPACE" --name atlas --ref "$GITHUB_SHA"
+
+      - name: Validate marketplace schema
+        run: apm marketplace validate atlas
 
       - name: Pack marketplace
-        run: apm pack
+        run: apm pack --strict-metadata --check-versions
+
+      - name: Verify packed catalog is clean
+        run: apm pack --check-clean --check-versions
 
       - name: Fail on pack drift
         run: |

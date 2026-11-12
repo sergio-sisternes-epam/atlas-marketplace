@@ -18,11 +18,11 @@ it is **not** the source tree for the packages it lists.
 | [`atlas-cartograph`](https://github.com/sergio-sisternes-epam/atlas-cartograph) | [sergio-sisternes-epam/atlas-cartograph](https://github.com/sergio-sisternes-epam/atlas-cartograph) | v0.4.3 | tag `v0.4.3` (SHA `4470256eca4379af8715773a80d6664843b524a2`) |
 | [`autogenesis`](https://github.com/sergio-sisternes-epam/autogenesis) | [sergio-sisternes-epam/autogenesis](https://github.com/sergio-sisternes-epam/autogenesis) | v0.9.0 | tag `v0.9.0` (SHA `5dbf95e88da31f24848ca3352e0f83525f2c6719`) |
 | [`atlas-tasks`](https://github.com/sergio-sisternes-epam/atlas-tasks) | [sergio-sisternes-epam/atlas-tasks](https://github.com/sergio-sisternes-epam/atlas-tasks) | v0.7.0 | tag `v0.7.0` (SHA `8d8e1db954ec75cc379f8c575d49d8cd3d9f3388`) |
-| [`atlas-people`](https://github.com/sergio-sisternes-epam/atlas-people) | [sergio-sisternes-epam/atlas-people](https://github.com/sergio-sisternes-epam/atlas-people) | v0.1.2 | tag `v0.1.2` (SHA `605ee9a7c20d3c68af37cb410ca43be67475574c`) |
+| [`atlas-people`](https://github.com/sergio-sisternes-epam/atlas-people) | [sergio-sisternes-epam/atlas-people](https://github.com/sergio-sisternes-epam/atlas-people) | v0.1.3 | tag `v0.1.3` (SHA `c4e85ae8a21b4cef7358359c0e7859873d2bbe7e`) |
 
-Pin column SHAs are peeled commits (`tag^{}`). After `apm pack`, generated
-`sha` is the GitHub object for the tag (annotated tag object when the tag is
-annotated).
+Pin column SHAs are peeled commits (`tag^{}`). APM 0.35.0 generates the same
+peeled commit SHA in each catalog entry; do not hand-edit generated `sha`
+values.
 
 ## Install
 
